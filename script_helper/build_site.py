@@ -61,7 +61,6 @@ def main():
     for marker, value in replacements.items():
         assert marker in document, marker
         document = document.replace(marker, value)
-    shutil.copy2(ROOT / 'script_helper' / 'terminal_demo.py', output / 'terminal_demo.py')
     text_demo = '\n\n'.join(f'{title}\n\n{text}' for _, title, _, text in art_pieces())
     (output / 'demo.txt').write_text(f'Monofoki terminal specimen\n\n{CHARACTER_SAMPLE}\n\n{text_demo}\n')
     def version_asset(match):

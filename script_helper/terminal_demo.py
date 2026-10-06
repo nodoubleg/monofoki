@@ -7,17 +7,17 @@ import shutil
 import sys
 
 CHARACTER_SAMPLE = 'agil|!0Oo$#@&(){}[]<>;:\'"`.,-_=+'
-FOX = r"""         .       *          .
-    *          /\_/\              *
-              / o o \
-          .  (   ^   )     .
-              \ \_/ /
-       __      /   \       __
-      /  \____/     \______/  \
-      \       monofoki        /
-       \__    /     \     ___/
-          \__/       \___/
-    .          *              ."""
+GLOBE = r'''           .-""""""""-.
+        .-'     |      '-.
+      .'      .-+-.       '.
+     /      .'  |  '.       \
+    ;------/----+----\-------;
+    |     ;     |     ;      |
+    ;------\----+----/-------;
+     \      '.  |  .'       /
+      '.      '-+-'       .'
+        '-.     |      .-'
+           '-........-' '''.rstrip()
 CITY = """                 ⇧  ⇨  ⇩  ⇯
      ┌───┐          ┌──────┐
      │░░░│  ┌────┐  │▒▒▒▒▒▒│
@@ -30,7 +30,7 @@ CITY = """                 ⇧  ⇨  ⇩  ⇯
 def art_pieces():
     """One source for the website gallery and the printable terminal demo."""
     return (
-        ("fox", "A little ASCII fox", "ASCII, spaces, and punctuation", FOX),
+        ("globe", "ASCII globe", "ASCII, spaces, and punctuation", GLOBE),
         ("orbit", "A Braille orbit", "Dots on a two-by-four grid",
          "\n".join(artwork(40, 16))),
         ("city", "Terminal after dark", "Box drawing, blocks, and restored arrows", CITY),
@@ -42,7 +42,7 @@ def print_scene(scene, styled=False):
         return f'\033[38;2;{rgb}m{text}\033[0m' if styled else text
 
     if scene == "characters":
-        print(color("The characters worth getting opinionated about", "255;132;255") + '\n')
+        print(color("Monofoki character specimen", "255;132;255") + '\n')
         print(color(CHARACTER_SAMPLE, "161;138;255"))
         print("\n0Oo  1lI|!  B8  rn m  (){}[]<>")
         styles = '\033[1mBold\033[0m   \033[3mItalic\033[0m   \033[1;3mBold italic\033[0m' if styled else 'Bold   Italic   Bold italic'
@@ -52,7 +52,7 @@ def print_scene(scene, styled=False):
         print(color("\uf07b  monofoki   \ue0a0 master   \uf120 python3", "104;255;214"))
         print(color("\n┌──────────────────────────────┐\n│  ⇨ ⇩ ⇯   ░▒▓█   ⠁⠂⠄⠈⠐⠠⡀⢀  │\n└──────────────────────────────┘", "161;138;255"))
     else:
-        colors = {'fox': '255;132;255', 'orbit': '104;255;214', 'city': '161;138;255'}
+        colors = {'globe': '255;132;255', 'orbit': '104;255;214', 'city': '161;138;255'}
         for key, title, _, text in art_pieces():
             if scene in (key, "all"):
                 print(f"{title}\n\n{color(text, colors[key])}\n")
@@ -85,7 +85,7 @@ def main():
     parser.add_argument("--all", action="store_true", help="also print all 256 Braille patterns")
     parser.add_argument("--plain", action="store_true", help="omit ANSI bold/italic style samples")
     parser.add_argument("--art", action="store_true", help="print every artwork shown on the project website")
-    parser.add_argument("--scene", choices=("characters", "icons", "fox", "orbit", "city", "all"),
+    parser.add_argument("--scene", choices=("characters", "icons", "globe", "orbit", "city", "all"),
                         help="print a scene used in the VHS specimen recording")
     args = parser.parse_args()
     if args.art or args.scene:

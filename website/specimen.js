@@ -47,20 +47,3 @@ document.querySelector("#reset").addEventListener("click", () => {
   updateSample();
 });
 updateSample();
-
-document
-  .querySelector("#copy-demo")
-  .addEventListener("click", async (event) => {
-    const button = event.currentTarget;
-    try {
-      await navigator.clipboard.writeText(
-        "python3 script_helper/terminal_demo.py --art",
-      );
-      button.textContent = "Copied";
-      setTimeout(() => {
-        button.textContent = "Copy command";
-      }, 2000);
-    } catch (_) {
-      button.textContent = "Select the command to copy";
-    }
-  });

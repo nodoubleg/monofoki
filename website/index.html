@@ -29,28 +29,31 @@
         <h1 id="title">mono<span>foki</span><span class="cursor" aria-hidden="true">_</span></h1>
         <div class="hero-bottom">
           <p>For the terminal you spend<br>way too much time in.</p>
-          <p class="hero-detail">Mononoki’s character.<br> Monofoki’s details.<br> A few more glyphs to finish the picture.</p>
+          <p class="hero-detail">Mononoki, plus Monofoki, plus the terminal characters I was missing.</p>
         </div>
         <a class="download-link" href="https://github.com/nodoubleg/monofoki/releases/latest">Get the fonts</a>
       </section>
 
       <section class="split origin" aria-labelledby="rabbit-hole">
-        <div class="code-sample" aria-label="Python code specimen">
-          <span class="comment"># one more font. then I'll get to work.</span>
-          <pre><code><span class="violet">def</span> <span class="mint">pick_font</span>(fonts):
-    <span class="violet">for</span> font <span class="violet">in</span> fonts:
-        <span class="violet">if</span> font.name == <span class="pink">"monofoki"</span>:
-            <span class="violet">return</span> font
+        <div class="code-sample" aria-label="Perl code specimen">
+          <span class="comment"># terminal font settings</span>
+          <pre><code><span class="violet">use strict</span>;
+<span class="violet">use warnings</span>;
 
-terminal.font = pick_font(fonts)
-<span class="comment"># okay, now we can code.</span></code></pre>
+<span class="violet">my</span> <span class="mint">%terminal</span> = (
+    font =&gt; <span class="pink">'Monofoki Nerd Font'</span>,
+    size =&gt; <span class="violet">14</span>,
+);
+
+<span class="violet">printf</span> <span class="pink">"%s / %d pt\n"</span>,
+    <span class="mint">@terminal</span>{qw(font size)};</code></pre>
           <div class="code-bottom"><span>regular · italic · bold · bold italic</span><span aria-hidden="true">¶</span></div>
         </div>
         <div class="story">
           <p class="section-number">01 / THE RABBIT HOLE</p>
           <h2 id="rabbit-hole">The font I kept<br>coming back to.</h2>
           <p>I went way down the rabbit hole on fonts for my terminal. Monofoki was the Mononoki variant that fit my preferences best: the shapes, the spacing, the little details you notice after staring at code all day.</p>
-          <p>This is a fork of <a href="https://github.com/datMaffin/monofoki">datMaffin/monofoki</a>, which builds on <a href="https://github.com/madmalik/mononoki">Matthias Tellen’s Mononoki</a>. The original <a href="https://madmalik.github.io/mononoki/">Mononoki specimen site</a> is the starting point for this one, too.</p>
+          <p>This is a fork of <a href="https://github.com/datMaffin/monofoki">datMaffin/monofoki</a>, which builds on <a href="https://github.com/madmalik/mononoki">Matthias Tellen’s Mononoki</a>.</p>
         </div>
       </section>
 
@@ -68,7 +71,7 @@ terminal.font = pick_font(fonts)
         </div>
         <label class="edit-label" for="type-sample">Try your own text</label>
         <textarea id="type-sample" spellcheck="false" rows="3">@@CHARACTER_SAMPLE@@
-The quick brown fox writes surprisingly readable code.</textarea>
+The quick brown fox jumps over the lazy dog.</textarea>
         <div class="sample-baseline"><span>Four actual styles. No synthetic bold or italic.</span><span>Monofoki · WOFF2</span></div>
       </section>
 
@@ -77,7 +80,7 @@ The quick brown fox writes surprisingly readable code.</textarea>
           <p class="section-number">03 / BEYOND ASCII</p>
           <h2 id="graphics-heading">The rest of<br>the terminal.</h2>
           <p>My terminal needed Nerd Font icons; datMaffin’s build workflow already supported patching those in. Then the missing non-ASCII characters started showing up as odd gaps and fallback glyphs in newer terminal apps like <a href="https://github.com/openai/codex">Codex</a>, <a href="https://github.com/can1357/oh-my-pi">oh-my-pi (omp)</a>, and <a href="https://github.com/charmbracelet/crush">Crush</a>.</p>
-          <p>This fork adds all 256 Braille patterns to every style and restores three missing italic arrows. Dotted graphics, box joins, and the surrounding text can finally share the same font.</p>
+          <p>This fork adds all 256 Braille patterns to every style and restores three missing italic arrows. Printable ASCII, box drawing, blocks, and Braille are fully covered; other Unicode ranges still have gaps.</p>
           <p>High-density screens are everyday tools now. The point is still the same: clean shapes at the size you actually use, consistent spacing, and no strange gaps in the middle of your terminal.</p>
         </div>
         <div class="terminal-panel" aria-label="Terminal glyph specimen">
@@ -96,7 +99,7 @@ The quick brown fox writes surprisingly readable code.</textarea>
       </section>
 
       <section class="recording" aria-labelledby="recording-heading">
-        <div class="section-heading"><div><p class="section-number">04 / IN MOTION</p><h2 id="recording-heading">A little terminal cinema.</h2></div><a href="https://github.com/charmbracelet/vhs">Recorded with VHS</a></div>
+        <div class="section-heading"><div><p class="section-number">04 / IN MOTION</p><h2 id="recording-heading">In the terminal.</h2></div><a href="https://github.com/charmbracelet/vhs">Recorded with VHS</a></div>
         <video controls playsinline preload="metadata" poster="media/demo-poster.png" aria-label="Monofoki terminal specimen recording">
           <source src="media/monofoki.mp4" type="video/mp4">
           <p>Your browser cannot play this recording. <a href="media/monofoki.mp4">Download the MP4</a> or <a href="demo.txt">read the text specimen</a>.</p>
@@ -105,7 +108,7 @@ The quick brown fox writes surprisingly readable code.</textarea>
       </section>
 
       <section id="download" class="download" aria-labelledby="download-heading">
-        <div><p class="section-number">05 / TAKE IT HOME</p><h2 id="download-heading">One more font.<br>Then back to work.</h2></div>
+        <div><p class="section-number">05 / DOWNLOAD</p><h2 id="download-heading">Get Monofoki.</h2></div>
         <div class="download-options">
           <a href="https://github.com/nodoubleg/monofoki/releases/latest"><strong>Monofoki Nerd Font</strong><span>For terminals with icon-heavy prompts and apps.</span><span class="format">TTF · OTF · WOFF2</span></a>
           <a href="https://github.com/nodoubleg/monofoki/releases/latest"><strong>Monofoki</strong><span>The original shapes, with the extra terminal glyphs.</span><span class="format">TTF · hinted TTF · OTF · WOFF2</span></a>
@@ -114,10 +117,8 @@ The quick brown fox writes surprisingly readable code.</textarea>
       </section>
 
       <section class="art-gallery" aria-labelledby="art-heading">
-        <div class="section-heading"><div><p class="section-number">06 / JUST BECAUSE WE CAN</p><h2 id="art-heading">A few characters.<br>A whole picture.</h2></div><span class="paragraph-mark" aria-hidden="true">¶</span></div>
+        <div class="section-heading"><div><p class="section-number">06 / ASCII &amp; UNICODE</p><h2 id="art-heading">Terminal art.</h2></div><span class="paragraph-mark" aria-hidden="true">¶</span></div>
         <div class="art-grid">@@ART_GALLERY@@</div>
-        <div class="demo-command"><code>python3 script_helper/terminal_demo.py --art</code><button type="button" id="copy-demo">Copy command</button></div>
-        <p class="demo-note">The same artwork, in your own terminal. <a href="terminal_demo.py" download>Download the demo script</a>.</p>
       </section>
     </main>
 

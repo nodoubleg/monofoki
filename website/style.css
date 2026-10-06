@@ -394,8 +394,7 @@ input[type="range"] {
 output {
   min-width: 5ch;
 }
-.type-controls button,
-#copy-demo {
+.type-controls button {
   background: none;
   color: var(--text);
   border: 1px solid var(--line);
@@ -564,27 +563,6 @@ figcaption small {
 .art-grid figure:last-child figcaption {
   margin: 0 20px;
 }
-.demo-command {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  border-top: 1px solid var(--line);
-  padding-top: 25px;
-  margin-top: 28px;
-}
-.demo-command code {
-  font-size: 14px;
-  overflow-wrap: anywhere;
-  color: var(--mint);
-}
-.demo-command button {
-  flex-shrink: 0;
-}
-.demo-note {
-  color: var(--muted);
-  font-size: 14px;
-}
 footer {
   border-top: 1px solid var(--line);
   padding: 28px 0 40px;
@@ -663,9 +641,6 @@ footer .build-note {
   .hero-bottom {
     gap: 20px;
   }
-  .hero-detail br {
-    display: none;
-  }
   .hero-detail {
     max-width: 35ch;
   }
@@ -739,10 +714,6 @@ footer .build-note {
   }
   .art-grid figure:last-child figcaption {
     margin: 20px 0 0;
-  }
-  .demo-command {
-    align-items: flex-start;
-    flex-direction: column;
   }
   .download {
     gap: 20px;
