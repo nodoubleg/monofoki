@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 if [ -f "export/Monofoki-Regular.otf" ]; then
     nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Regular.otf'
 fi
@@ -42,5 +44,5 @@ elif [ -f "export/Monofoki-Bold.ttf" ]; then
     nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold.ttf'
 fi
 
-curl -o 'export/LICENSE-nerd-font' 'https://raw.githubusercontent.com/ryanoasis/nerd-fonts/b82bd819aa6a9ac6d0bfc5a26fb262dd248d7c4d/LICENSE'
-curl -o 'export/license-audit-nerd-font.md' 'https://raw.githubusercontent.com/ryanoasis/nerd-fonts/a2697b0fefe5e8d946c18a167a9496c6f224d7c9/license-audit.md'
+curl --fail --location --show-error -o 'export/LICENSE-nerd-font' 'https://raw.githubusercontent.com/ryanoasis/nerd-fonts/b82bd819aa6a9ac6d0bfc5a26fb262dd248d7c4d/LICENSE'
+curl --fail --location --show-error -o 'export/license-audit-nerd-font.md' 'https://raw.githubusercontent.com/ryanoasis/nerd-fonts/a2697b0fefe5e8d946c18a167a9496c6f224d7c9/license-audit.md'

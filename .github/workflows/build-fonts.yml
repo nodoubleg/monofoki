@@ -1,0 +1,99 @@
+name: Build fonts
+
+on:
+  push:
+    branches: [master]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fonts-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Check out sources
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y \
+            fontforge python3-fontforge ttfautohint woff2 curl unzip
+
+      - name: Check source glyphs
+        run: |
+          python3 script_helper/add_braille.py --check
+          fontforge -lang=py -script script_helper/check_terminal_glyphs.py
+
+      - name: Build all four styles with hinting
+        run: ./create_font.sh --hint
+
+      - name: Validate regular font exports
+        run: |
+          for style in Regular Italic Bold Bold-Italic; do
+            for suffix in .ttf -hinted.ttf .otf .woff2 -hinted.woff2; do
+              test -s "export/Monofoki-${style}${suffix}"
+            done
+          done
+          test -s export/LICENSE-Monofoki
+          fontforge -lang=py -script script_helper/check_terminal_glyphs.py \
+            export/*.ttf export/*.otf
+
+      - name: Upload regular Monofoki
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: Monofoki-${{ github.sha }}
+          path: export/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Install Nerd Font patcher
+        run: |
+          curl --fail --location --show-error \
+            https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FontPatcher.zip \
+            -o "$RUNNER_TEMP/FontPatcher.zip"
+          echo "a8f11e511ed7c69e96680858c06b50a643ea7752e26d5cd13dd5e5cc53ab1760  $RUNNER_TEMP/FontPatcher.zip" | sha256sum --check
+          unzip -q "$RUNNER_TEMP/FontPatcher.zip" -d "$RUNNER_TEMP/nerd-font-patcher"
+          mkdir -p "$RUNNER_TEMP/bin"
+          cat > "$RUNNER_TEMP/bin/nerd-font-patcher" <<'PATCHER'
+          #!/usr/bin/env bash
+          exec fontforge -lang=py -script "$RUNNER_TEMP/nerd-font-patcher/font-patcher" --no-progressbars "$@"
+          PATCHER
+          chmod +x "$RUNNER_TEMP/bin/nerd-font-patcher"
+          echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
+
+      - name: Build and validate Nerd Font variants
+        run: |
+          ./post_create_nerdfonts.sh
+          for style in Regular Italic Bold BoldItalic; do
+            test -s "export/MonofokiNerdFont-${style}.ttf"
+            test -s "export/MonofokiNerdFont-${style}.otf"
+            woff2_compress "export/MonofokiNerdFont-${style}.otf"
+            test -s "export/MonofokiNerdFont-${style}.woff2"
+          done
+          test -s export/LICENSE-nerd-font
+          test -s export/license-audit-nerd-font.md
+          fontforge -lang=py -script script_helper/check_terminal_glyphs.py \
+            export/MonofokiNerdFont-*.ttf export/MonofokiNerdFont-*.otf
+
+      - name: Upload Monofoki Nerd Font
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: MonofokiNerdFont-${{ github.sha }}
+          path: |
+            export/MonofokiNerdFont-*
+            export/LICENSE-Monofoki
+            export/LICENSE-nerd-font
+            export/license-audit-nerd-font.md
+          if-no-files-found: error
+          retention-days: 30

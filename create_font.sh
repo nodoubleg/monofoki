@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 mkdir -p export
 
 function generate {
-  source=$1
-  export=$2
+  local source_path=$1
+  local output_path=$2
 
   fontforge - << END
-font = fontforge.open("$source")
+font = fontforge.open("$source_path")
 
-if "$source"[-3:] == "ttf":
+if "$output_path"[-3:] == "ttf":
   layers = font.layers
   for layer_name in layers:
     layers[layer_name].is_quadratic = True
@@ -37,7 +39,7 @@ https://scripts.sil.org/OFL""")
 if ("English (US)", "SubFamily", "Bold-Italic") in font.sfnt_names:
   font.appendSFNTName("English (US)", "SubFamily", "Bold Italic")
 
-font.generate("$export")
+font.generate("$output_path")
 END
 
 }

@@ -52,6 +52,21 @@ This version also tries to fix all the known issues and at times adds additional
 ## Fork specific problems to solve
 * FontForge does not have a tool to create rounded edges
 
+## Automated builds
+
+The [Build fonts workflow](https://github.com/nodoubleg/monofoki/actions/workflows/build-fonts.yml)
+runs on pushes to `master`, `v*` tags, pull requests, and manual runs from the
+Actions tab. It uses an Ubuntu 24.04 GitHub runner to build all four styles
+with `./create_font.sh --hint`, then applies Nerd Fonts 3.4.0 patching.
+Source and exported glyph checks must pass before each artifact is uploaded.
+
+Download `Monofoki-<commit>` or `MonofokiNerdFont-<commit>` from the run's
+Artifacts section. The regular bundle contains TTF, hinted TTF, OTF, WOFF2
+from OTF, hinted WOFF2 from TTF, and the font license. The Nerd Font bundle
+contains patched TTF (from the hinted build), OTF, WOFF2 from OTF, and licenses.
+Artifacts are retained for 30 days. Generated fonts are uploaded as artifacts
+and are not committed to the repository.
+
 ## Terminal graphics
 
 All four styles include the 256 Unicode Braille patterns (`U+2800–U+28FF`).
