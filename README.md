@@ -3,6 +3,8 @@
 This is a fork of [datMaffin/monofoki](https://github.com/datMaffin/monofoki), itself based on [Mononoki](https://github.com/madmalik/mononoki).
 Compared with datMaffin's fork, it adds all 256 Unicode Braille patterns in every style, restores three missing italic arrows, and provides CI builds of regular and Nerd Font variants.
 
+Try the [live font specimen](https://nodoubleg.github.io/monofoki/) or [download a release](https://github.com/nodoubleg/monofoki/releases/latest).
+
 ## [Specimen](script_helper/specimen.pdf)
 
 ## Goals of this fork
@@ -68,6 +70,11 @@ from OTF, hinted WOFF2 from TTF, and the font license. The Nerd Font bundle
 contains patched TTF (from the hinted build), OTF, WOFF2 from OTF, and licenses.
 Artifacts are retained for 30 days. Generated fonts are uploaded as artifacts
 and are not committed to the repository.
+
+The same run builds the [GitHub Pages specimen](https://nodoubleg.github.io/monofoki/)
+using its WOFF2 artifacts and records a terminal demo with VHS. Only `master`
+publishes the site. Print all of the site's artwork with
+`python3 script_helper/terminal_demo.py --art`.
 
 ## Terminal graphics
 

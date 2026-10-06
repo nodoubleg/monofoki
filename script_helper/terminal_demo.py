@@ -6,6 +6,54 @@ import math
 import shutil
 import sys
 
+CHARACTER_SAMPLE = 'agil|!0Oo$#@&(){}[]<>;:\'"`.,-_=+'
+FOX = r"""         .       *          .
+    *          /\_/\              *
+              / o o \
+          .  (   ^   )     .
+              \ \_/ /
+       __      /   \       __
+      /  \____/     \______/  \
+      \       monofoki        /
+       \__    /     \     ___/
+          \__/       \___/
+    .          *              ."""
+CITY = """                 ⇧  ⇨  ⇩  ⇯
+     ┌───┐          ┌──────┐
+     │░░░│  ┌────┐  │▒▒▒▒▒▒│
+  ┌──┤░░░├──┤▓▓▓▓├──┤▒▒▒▒▒▒├──┐
+  │  │░░░│  │▓▓▓▓│  │▒▒▒▒▒▒│  │
+  └──┴───┴──┴────┴──┴──────┴──┘
+  ▁▂▃▄▅▆▇█  terminal after dark"""
+
+
+def art_pieces():
+    """One source for the website gallery and the printable terminal demo."""
+    return (
+        ("fox", "A little ASCII fox", "ASCII, spaces, and punctuation", FOX),
+        ("orbit", "A Braille orbit", "Dots on a two-by-four grid",
+         "\n".join(artwork(40, 16))),
+        ("city", "Terminal after dark", "Box drawing, blocks, and restored arrows", CITY),
+    )
+
+
+def print_scene(scene):
+    if scene == "characters":
+        print("The characters worth getting opinionated about\n")
+        print(CHARACTER_SAMPLE)
+        print("\n0Oo  1lI|!  B8  rn m  (){}[]<>")
+        print("\n\033[1mBold\033[0m   \033[3mItalic\033[0m   \033[1;3mBold italic\033[0m")
+    elif scene == "icons":
+        print("Nerd Font icons + terminal graphics\n")
+        print("\uf07b  monofoki   \ue0a0 master   \uf120 python3")
+        print("\n┌──────────────────────────────┐")
+        print("│  ⇨ ⇩ ⇯   ░▒▓█   ⠁⠂⠄⠈⠐⠠⡀⢀  │")
+        print("└──────────────────────────────┘")
+    else:
+        for key, title, _, text in art_pieces():
+            if scene in (key, "all"):
+                print(f"{title}\n\n{text}\n")
+
 
 def artwork(columns, rows):
     # A six-lobed rosette sampled onto a Unicode Braille raster.
@@ -33,7 +81,13 @@ def main():
     parser.add_argument("--width", type=int, default=48, help="art width in terminal columns (16–100)")
     parser.add_argument("--all", action="store_true", help="also print all 256 Braille patterns")
     parser.add_argument("--plain", action="store_true", help="omit ANSI bold/italic style samples")
+    parser.add_argument("--art", action="store_true", help="print every artwork shown on the project website")
+    parser.add_argument("--scene", choices=("characters", "icons", "fox", "orbit", "city", "all"),
+                        help="print a scene used in the VHS specimen recording")
     args = parser.parse_args()
+    if args.art or args.scene:
+        print_scene("all" if args.art else args.scene)
+        return
     if not 16 <= args.width <= 100:
         parser.error("--width must be between 16 and 100")
     width = min(args.width, max(16, shutil.get_terminal_size((80, 24)).columns - 2))
