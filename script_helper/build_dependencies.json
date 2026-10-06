@@ -1,0 +1,27 @@
+{
+  "nerd_fonts_version": "3.5.1",
+  "unicode_version": "18.0.0",
+  "assets": {
+    "nerd-font-patcher": {
+      "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/FontPatcher.zip",
+      "sha256": "42bcb32145499a35732274c7fc48deb434ad0d2e0e118f98527c1479c6fa251a",
+      "filename": "FontPatcher-3.5.1.zip",
+      "archive": "zip"
+    },
+    "iosevka": {
+      "url": "https://raw.githubusercontent.com/ryanoasis/nerd-fonts/b894ea7803af6aade63d60a4381e006098ec9c4d/patched-fonts/Iosevka/IosevkaNerdFont-Regular.ttf",
+      "sha256": "5e3f3b0a70fcdc5f1ace66ecad69b9913dfd8822fee221dc5e552c7dbc8c17df",
+      "filename": "IosevkaNerdFont-Regular.ttf"
+    },
+    "noto-symbols2": {
+      "url": "https://raw.githubusercontent.com/google/fonts/7b6724ac7ececc713e9ba93af309f7520c9a80a3/ofl/notosanssymbols2/NotoSansSymbols2-Regular.ttf",
+      "sha256": "7d5fb73b7ca67a6798101741f5d280a3d016a56a197afcd4199dbb57b4b82a21",
+      "filename": "NotoSansSymbols2-Regular.ttf"
+    },
+    "kreative-square": {
+      "url": "https://raw.githubusercontent.com/kreativekorp/open-relay/e4b81241e8c7269a91c0bd865cf5c9e7208fbada/KreativeSquare/KreativeSquare.ttf",
+      "sha256": "7eebf2b2d739baaa68dfcaa9d482fdb89fa570bf0d553300572e90fe48ff89d6",
+      "filename": "KreativeSquare.ttf"
+    }
+  }
+}

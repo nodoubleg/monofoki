@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add original terminal Braille outlines without reserializing existing SFD glyphs.
+"""Align source Braille with Nerd Fonts 3.5.1's rectangular 0.6-ratio grid.
 
 Run from any directory. --check verifies that all four sources are up to date.
 The grid stays upright and identical in every style, including bold and italic.
@@ -15,7 +15,7 @@ VARIANTS = ("Regular", "Italic", "Bold", "Bold-Italic")
 # Unicode bit order: dots 1,2,3 down the left; 4,5,6 down the right;
 # then dots 7 and 8 on the bottom row.
 DOTS = ((0, 0), (0, 1), (0, 2), (1, 0), (1, 1), (1, 2), (0, 3), (1, 3))
-DOT_SIZE = 178  # About 36% area coverage, like a 180-unit dot on a 300-unit grid.
+DOT_RATIO = 0.6  # Same default as Nerd Fonts' bin/scripts/braille/Braille.py.
 RECORD = re.compile(r"^StartChar: .*?^EndChar\n", re.MULTILINE | re.DOTALL)
 
 
@@ -35,8 +35,10 @@ def braille_record(codepoint, glyph_id, width, top, bottom):
                 continue
             x = (column + 0.5) * width / 2
             y = top - (row + 0.5) * (top - bottom) / 4
-            left, right = x - DOT_SIZE / 2, x + DOT_SIZE / 2
-            low, high = y - DOT_SIZE / 2, y + DOT_SIZE / 2
+            half_x = width / 4 * DOT_RATIO
+            half_y = (top - bottom) / 8 * DOT_RATIO
+            left, right = x - half_x, x + half_x
+            low, high = y - half_y, y + half_y
             # Clockwise outer contours; fractional source coordinates retain
             # the exact lattice. The existing export pipeline rounds to units.
             lines.extend((f"{left:g} {low:g} m 1", f" {left:g} {high:g} l 1",
@@ -57,7 +59,7 @@ def update(text):
         raise ValueError("Braille grid requires zero hhea line gap")
     width = next(field(m[0], "Width") for m in records
                  if m[0].startswith("StartChar: space\n"))
-    if DOT_SIZE >= min(width / 2, (top - bottom) / 4):
+    if not 0 < DOT_RATIO < 1:
         raise ValueError("Dots must not touch neighboring dots")
     encodings = {}
     ids = []

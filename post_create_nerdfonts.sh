@@ -1,48 +1,23 @@
 #!/usr/bin/env bash
-
 set -euo pipefail
 
-if [ -f "export/Monofoki-Regular.otf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Regular.otf'
-fi
-
-if [ -f "export/Monofoki-Italic.otf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Italic.otf'
-fi
-
-if [ -f "export/Monofoki-Bold-Italic.otf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold-Italic.otf'
-fi
-
-if [ -f "export/Monofoki-Bold.otf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold.otf'
-fi
-
-
-# Only prefer hinted files made after the current unhinted build.
-if [ -f "export/Monofoki-Regular-hinted.ttf" ] && [ "export/Monofoki-Regular-hinted.ttf" -nt "export/Monofoki-Regular.ttf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Regular-hinted.ttf'
-elif [ -f "export/Monofoki-Regular.ttf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Regular.ttf'
-fi
-
-if [ -f "export/Monofoki-Italic-hinted.ttf" ] && [ "export/Monofoki-Italic-hinted.ttf" -nt "export/Monofoki-Italic.ttf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Italic-hinted.ttf'
-elif [ -f "export/Monofoki-Italic.ttf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Italic.ttf'
-fi
-
-if [ -f "export/Monofoki-Bold-Italic-hinted.ttf" ] && [ "export/Monofoki-Bold-Italic-hinted.ttf" -nt "export/Monofoki-Bold-Italic.ttf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold-Italic-hinted.ttf'
-elif [ -f "export/Monofoki-Bold-Italic.ttf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold-Italic.ttf'
-fi
-
-if [ -f "export/Monofoki-Bold-hinted.ttf" ] && [ "export/Monofoki-Bold-hinted.ttf" -nt "export/Monofoki-Bold.ttf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold-hinted.ttf'
-elif [ -f "export/Monofoki-Bold.ttf" ]; then
-    nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold.ttf'
-fi
-
-curl --fail --location --show-error -o 'export/LICENSE-nerd-font' 'https://raw.githubusercontent.com/ryanoasis/nerd-fonts/b82bd819aa6a9ac6d0bfc5a26fb262dd248d7c4d/LICENSE'
-curl --fail --location --show-error -o 'export/license-audit-nerd-font.md' 'https://raw.githubusercontent.com/ryanoasis/nerd-fonts/a2697b0fefe5e8d946c18a167a9496c6f224d7c9/license-audit.md'
+# Local builds and CI use the same checksum-verified Nerd Fonts 3.5.1 patcher.
+patcher=$(python3 script_helper/fetch_build_dependencies.py nerd-font-patcher)
+for style in Regular Italic Bold Bold-Italic; do
+    if [[ -f "export/Monofoki-${style}.otf" ]]; then
+        fontforge -lang=py -script "$patcher" --no-progressbars --complete \
+            --braille rectangle --outputdir export/ "export/Monofoki-${style}.otf"
+    fi
+    input="export/Monofoki-${style}.ttf"
+    hinted="export/Monofoki-${style}-hinted.ttf"
+    if [[ -f "$hinted" && "$hinted" -nt "$input" ]]; then
+        input="$hinted"
+    fi
+    if [[ -f "$input" ]]; then
+        fontforge -lang=py -script "$patcher" --no-progressbars --complete \
+            --braille rectangle --outputdir export/ "$input"
+    fi
+done
+python3 script_helper/preserve_nerd_font_names.py export/MonofokiNerdFont-*.ttf export/MonofokiNerdFont-*.otf
+cp licenses/LICENSE-NerdFonts export/LICENSE-nerd-font
+cp licenses/license-audit-nerd-font.md export/license-audit-nerd-font.md

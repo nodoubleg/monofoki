@@ -28,11 +28,13 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install --no-install-recommends -y \
-            fontforge python3-fontforge ttfautohint woff2 curl unzip
+            fontforge python3-fontforge python3-fonttools ttfautohint woff2 curl unzip
 
       - name: Check source glyphs
         run: |
           python3 script_helper/add_braille.py --check
+          fontforge -lang=py -script script_helper/add_terminal_symbols.py --check
+          python3 script_helper/check_unicode_data.py
           fontforge -lang=py -script script_helper/check_terminal_glyphs.py
 
       - name: Build all four styles with hinting
@@ -46,6 +48,9 @@ jobs:
             done
           done
           test -s export/LICENSE-Monofoki
+          test -s export/LICENSE-Iosevka
+          test -s export/LICENSE-NotoSansSymbols2
+          test -s export/LICENSE-KreativeSquare
           fontforge -lang=py -script script_helper/check_terminal_glyphs.py \
             export/*.ttf export/*.otf
 
@@ -56,21 +61,6 @@ jobs:
           path: export/
           if-no-files-found: error
           retention-days: 30
-
-      - name: Install Nerd Font patcher
-        run: |
-          curl --fail --location --show-error \
-            https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FontPatcher.zip \
-            -o "$RUNNER_TEMP/FontPatcher.zip"
-          echo "a8f11e511ed7c69e96680858c06b50a643ea7752e26d5cd13dd5e5cc53ab1760  $RUNNER_TEMP/FontPatcher.zip" | sha256sum --check
-          unzip -q "$RUNNER_TEMP/FontPatcher.zip" -d "$RUNNER_TEMP/nerd-font-patcher"
-          mkdir -p "$RUNNER_TEMP/bin"
-          cat > "$RUNNER_TEMP/bin/nerd-font-patcher" <<'PATCHER'
-          #!/usr/bin/env bash
-          exec fontforge -lang=py -script "$RUNNER_TEMP/nerd-font-patcher/font-patcher" --no-progressbars "$@"
-          PATCHER
-          chmod +x "$RUNNER_TEMP/bin/nerd-font-patcher"
-          echo "$RUNNER_TEMP/bin" >> "$GITHUB_PATH"
 
       - name: Build and validate Nerd Font variants
         run: |
@@ -92,8 +82,10 @@ jobs:
           name: MonofokiNerdFont-${{ github.sha }}
           path: |
             export/MonofokiNerdFont-*
-            export/LICENSE-Monofoki
-            export/LICENSE-nerd-font
+            export/LICENSE-*
+            export/NOTICES-symbols.md
+            export/symbol-additions.json
+            export/build-dependencies.json
             export/license-audit-nerd-font.md
           if-no-files-found: error
           retention-days: 30

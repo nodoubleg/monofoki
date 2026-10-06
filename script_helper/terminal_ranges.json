@@ -1,0 +1,91 @@
+{
+  "unicode_version": "18.0.0",
+  "assigned_printable": 2113,
+  "non_ascii_emoji_bases": 159,
+  "blocks": [
+    [
+      "ascii",
+      "Printable ASCII",
+      32,
+      126
+    ],
+    [
+      "arrows",
+      "Arrows",
+      8592,
+      8703
+    ],
+    [
+      "technical",
+      "Miscellaneous Technical",
+      8960,
+      9215
+    ],
+    [
+      "controls",
+      "Control Pictures",
+      9216,
+      9279
+    ],
+    [
+      "boxes",
+      "Box Drawing",
+      9472,
+      9599
+    ],
+    [
+      "blocks",
+      "Block Elements",
+      9600,
+      9631
+    ],
+    [
+      "shapes",
+      "Geometric Shapes",
+      9632,
+      9727
+    ],
+    [
+      "symbols",
+      "Miscellaneous Symbols",
+      9728,
+      9983
+    ],
+    [
+      "dingbats",
+      "Dingbats",
+      9984,
+      10175
+    ],
+    [
+      "braille",
+      "Braille Patterns",
+      10240,
+      10495
+    ],
+    [
+      "arrows-a",
+      "Supplemental Arrows A",
+      10224,
+      10239
+    ],
+    [
+      "arrows-b",
+      "Supplemental Arrows B",
+      10496,
+      10623
+    ],
+    [
+      "symbols-b",
+      "Miscellaneous Symbols and Arrows",
+      11008,
+      11263
+    ],
+    [
+      "legacy",
+      "Symbols for Legacy Computing",
+      129792,
+      130047
+    ]
+  ]
+}

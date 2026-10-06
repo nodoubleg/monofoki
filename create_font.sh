@@ -33,6 +33,9 @@ Copyright (c) 2013-2023, Matthias Tellen matthias.tellen@googlemail.com
 Modifications:
 Copyright (c) 2020-2025, Marvin Dostal
 
+Additional symbol outlines from Iosevka, Noto Sans Symbols 2, and Kreative Square.
+Full copyright notices and licenses are included with the fonts.
+
 Licensed under SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 https://scripts.sil.org/OFL""")
 
@@ -73,3 +76,7 @@ woff2_compress export/Monofoki-Bold.otf
 woff2_compress export/Monofoki-Bold-Italic.otf
 
 cp LICENSE export/LICENSE-Monofoki
+cp licenses/LICENSE-* export/
+cp licenses/NOTICES-symbols.md export/
+cp script_helper/symbol_additions.json export/symbol-additions.json
+cp script_helper/build_dependencies.json export/build-dependencies.json

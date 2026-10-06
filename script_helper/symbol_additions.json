@@ -1,0 +1,2911 @@
+{
+  "unicode_version": "18.0.0",
+  "baseline": "CoreText on macOS 27.0.1, current MonofokiNF Regular registered in process; system fallback only; emoji preference for standardized non-ASCII bases",
+  "additions": [
+    {
+      "codepoint": "2427",
+      "name": "SYMBOL FOR DELETE SQUARE CHECKER BOARD FORM",
+      "donor": "iosevka",
+      "source_codepoint": "2427",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2428",
+      "name": "SYMBOL FOR DELETE RECTANGULAR CHECKER BOARD FORM",
+      "donor": "iosevka",
+      "source_codepoint": "2428",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2429",
+      "name": "SYMBOL FOR DELETE MEDIUM SHADE FORM",
+      "donor": "iosevka",
+      "source_codepoint": "2429",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2700",
+      "name": "BLACK SAFETY SCISSORS",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2700",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "275F",
+      "name": "HEAVY LOW SINGLE COMMA QUOTATION MARK ORNAMENT",
+      "donor": "noto-symbols2",
+      "source_codepoint": "275F",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2760",
+      "name": "HEAVY LOW DOUBLE COMMA QUOTATION MARK ORNAMENT",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2760",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B4D",
+      "name": "DOWNWARDS TRIANGLE-HEADED ZIGZAG ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B4D",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B4E",
+      "name": "SHORT SLANTED NORTH ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B4E",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B4F",
+      "name": "SHORT BACKSLANTED SOUTH ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B4F",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B56",
+      "name": "HEAVY OVAL WITH OVAL INSIDE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B56",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B57",
+      "name": "HEAVY CIRCLE WITH CIRCLE INSIDE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B57",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B59",
+      "name": "HEAVY CIRCLED SALTIRE",
+      "donor": "iosevka",
+      "source_codepoint": "2B59",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B5A",
+      "name": "SLANTED NORTH ARROW WITH HOOKED HEAD",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B5A",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B5B",
+      "name": "BACKSLANTED SOUTH ARROW WITH HOOKED TAIL",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B5B",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B5C",
+      "name": "SLANTED NORTH ARROW WITH HORIZONTAL TAIL",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B5C",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B5D",
+      "name": "BACKSLANTED SOUTH ARROW WITH HORIZONTAL TAIL",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B5D",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B5E",
+      "name": "BENT ARROW POINTING DOWNWARDS THEN NORTH EAST",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B5E",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B5F",
+      "name": "SHORT BENT ARROW POINTING DOWNWARDS THEN NORTH EAST",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B5F",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B66",
+      "name": "NORTH WEST TRIANGLE-HEADED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B66",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B67",
+      "name": "NORTH EAST TRIANGLE-HEADED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B67",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B68",
+      "name": "SOUTH EAST TRIANGLE-HEADED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B68",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B69",
+      "name": "SOUTH WEST TRIANGLE-HEADED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B69",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B6A",
+      "name": "LEFTWARDS TRIANGLE-HEADED DASHED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B6A",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B6B",
+      "name": "UPWARDS TRIANGLE-HEADED DASHED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B6B",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B6C",
+      "name": "RIGHTWARDS TRIANGLE-HEADED DASHED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B6C",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B6D",
+      "name": "DOWNWARDS TRIANGLE-HEADED DASHED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B6D",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B6E",
+      "name": "CLOCKWISE TRIANGLE-HEADED OPEN CIRCLE ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B6E",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B6F",
+      "name": "ANTICLOCKWISE TRIANGLE-HEADED OPEN CIRCLE ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B6F",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B70",
+      "name": "LEFTWARDS TRIANGLE-HEADED ARROW TO BAR",
+      "donor": "iosevka",
+      "source_codepoint": "2B70",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B71",
+      "name": "UPWARDS TRIANGLE-HEADED ARROW TO BAR",
+      "donor": "iosevka",
+      "source_codepoint": "2B71",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B72",
+      "name": "RIGHTWARDS TRIANGLE-HEADED ARROW TO BAR",
+      "donor": "iosevka",
+      "source_codepoint": "2B72",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B73",
+      "name": "DOWNWARDS TRIANGLE-HEADED ARROW TO BAR",
+      "donor": "iosevka",
+      "source_codepoint": "2B73",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B76",
+      "name": "NORTH WEST TRIANGLE-HEADED ARROW TO BAR",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B76",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B77",
+      "name": "NORTH EAST TRIANGLE-HEADED ARROW TO BAR",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B77",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B78",
+      "name": "SOUTH EAST TRIANGLE-HEADED ARROW TO BAR",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B78",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B79",
+      "name": "SOUTH WEST TRIANGLE-HEADED ARROW TO BAR",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B79",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B7A",
+      "name": "LEFTWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE",
+      "donor": "iosevka",
+      "source_codepoint": "2B7A",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B7B",
+      "name": "UPWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE",
+      "donor": "iosevka",
+      "source_codepoint": "2B7B",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B7C",
+      "name": "RIGHTWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE",
+      "donor": "iosevka",
+      "source_codepoint": "2B7C",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B7D",
+      "name": "DOWNWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE",
+      "donor": "iosevka",
+      "source_codepoint": "2B7D",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B7E",
+      "name": "HORIZONTAL TAB KEY",
+      "donor": "iosevka",
+      "source_codepoint": "2B7E",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B7F",
+      "name": "VERTICAL TAB KEY",
+      "donor": "iosevka",
+      "source_codepoint": "2B7F",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B80",
+      "name": "LEFTWARDS TRIANGLE-HEADED ARROW OVER RIGHTWARDS TRIANGLE-HEADED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B80",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B81",
+      "name": "UPWARDS TRIANGLE-HEADED ARROW LEFTWARDS OF DOWNWARDS TRIANGLE-HEADED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B81",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B84",
+      "name": "LEFTWARDS TRIANGLE-HEADED PAIRED ARROWS",
+      "donor": "iosevka",
+      "source_codepoint": "2B84",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B85",
+      "name": "UPWARDS TRIANGLE-HEADED PAIRED ARROWS",
+      "donor": "iosevka",
+      "source_codepoint": "2B85",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B86",
+      "name": "RIGHTWARDS TRIANGLE-HEADED PAIRED ARROWS",
+      "donor": "iosevka",
+      "source_codepoint": "2B86",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B87",
+      "name": "DOWNWARDS TRIANGLE-HEADED PAIRED ARROWS",
+      "donor": "iosevka",
+      "source_codepoint": "2B87",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B88",
+      "name": "LEFTWARDS BLACK CIRCLED WHITE ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B88",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B89",
+      "name": "UPWARDS BLACK CIRCLED WHITE ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B89",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B8A",
+      "name": "RIGHTWARDS BLACK CIRCLED WHITE ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B8A",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B8B",
+      "name": "DOWNWARDS BLACK CIRCLED WHITE ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B8B",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B8C",
+      "name": "ANTICLOCKWISE TRIANGLE-HEADED RIGHT U-SHAPED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B8C",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B8D",
+      "name": "ANTICLOCKWISE TRIANGLE-HEADED BOTTOM U-SHAPED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B8D",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B8E",
+      "name": "ANTICLOCKWISE TRIANGLE-HEADED LEFT U-SHAPED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B8E",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B8F",
+      "name": "ANTICLOCKWISE TRIANGLE-HEADED TOP U-SHAPED ARROW",
+      "donor": "iosevka",
+      "source_codepoint": "2B8F",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B92",
+      "name": "NEWLINE LEFT",
+      "donor": "iosevka",
+      "source_codepoint": "2B92",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B93",
+      "name": "NEWLINE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "2B93",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B94",
+      "name": "FOUR CORNER ARROWS CIRCLING ANTICLOCKWISE",
+      "donor": "iosevka",
+      "source_codepoint": "2B94",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B96",
+      "name": "EQUALS SIGN WITH INFINITY ABOVE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF9",
+      "transform": "reflect vertically; uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B97",
+      "name": "SYMBOL FOR TYPE A ELECTRONICS",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B97",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B98",
+      "name": "THREE-D TOP-LIGHTED LEFTWARDS EQUILATERAL ARROWHEAD",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B98",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B99",
+      "name": "THREE-D RIGHT-LIGHTED UPWARDS EQUILATERAL ARROWHEAD",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B99",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B9A",
+      "name": "THREE-D TOP-LIGHTED RIGHTWARDS EQUILATERAL ARROWHEAD",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B9A",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B9B",
+      "name": "THREE-D LEFT-LIGHTED DOWNWARDS EQUILATERAL ARROWHEAD",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B9B",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B9C",
+      "name": "BLACK LEFTWARDS EQUILATERAL ARROWHEAD",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B9C",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B9D",
+      "name": "BLACK UPWARDS EQUILATERAL ARROWHEAD",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B9D",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B9E",
+      "name": "BLACK RIGHTWARDS EQUILATERAL ARROWHEAD",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B9E",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2B9F",
+      "name": "BLACK DOWNWARDS EQUILATERAL ARROWHEAD",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2B9F",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BA0",
+      "name": "DOWNWARDS TRIANGLE-HEADED ARROW WITH LONG TIP LEFTWARDS",
+      "donor": "iosevka",
+      "source_codepoint": "2BA0",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BA1",
+      "name": "DOWNWARDS TRIANGLE-HEADED ARROW WITH LONG TIP RIGHTWARDS",
+      "donor": "iosevka",
+      "source_codepoint": "2BA1",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BA2",
+      "name": "UPWARDS TRIANGLE-HEADED ARROW WITH LONG TIP LEFTWARDS",
+      "donor": "iosevka",
+      "source_codepoint": "2BA2",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BA3",
+      "name": "UPWARDS TRIANGLE-HEADED ARROW WITH LONG TIP RIGHTWARDS",
+      "donor": "iosevka",
+      "source_codepoint": "2BA3",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BA4",
+      "name": "LEFTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP UPWARDS",
+      "donor": "iosevka",
+      "source_codepoint": "2BA4",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BA5",
+      "name": "RIGHTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP UPWARDS",
+      "donor": "iosevka",
+      "source_codepoint": "2BA5",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BA6",
+      "name": "LEFTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP DOWNWARDS",
+      "donor": "iosevka",
+      "source_codepoint": "2BA6",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BA7",
+      "name": "RIGHTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP DOWNWARDS",
+      "donor": "iosevka",
+      "source_codepoint": "2BA7",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BA8",
+      "name": "BLACK CURVED DOWNWARDS AND LEFTWARDS ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BA8",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BA9",
+      "name": "BLACK CURVED DOWNWARDS AND RIGHTWARDS ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BA9",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BAA",
+      "name": "BLACK CURVED UPWARDS AND LEFTWARDS ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BAA",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BAB",
+      "name": "BLACK CURVED UPWARDS AND RIGHTWARDS ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BAB",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BAC",
+      "name": "BLACK CURVED LEFTWARDS AND UPWARDS ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BAC",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BAD",
+      "name": "BLACK CURVED RIGHTWARDS AND UPWARDS ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BAD",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BAE",
+      "name": "BLACK CURVED LEFTWARDS AND DOWNWARDS ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BAE",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BAF",
+      "name": "BLACK CURVED RIGHTWARDS AND DOWNWARDS ARROW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BAF",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BB0",
+      "name": "RIBBON ARROW DOWN LEFT",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BB0",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BB1",
+      "name": "RIBBON ARROW DOWN RIGHT",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BB1",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BB2",
+      "name": "RIBBON ARROW UP LEFT",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BB2",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BB3",
+      "name": "RIBBON ARROW UP RIGHT",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BB3",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BB4",
+      "name": "RIBBON ARROW LEFT UP",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BB4",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BB5",
+      "name": "RIBBON ARROW RIGHT UP",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BB5",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BB6",
+      "name": "RIBBON ARROW LEFT DOWN",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BB6",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BB7",
+      "name": "RIBBON ARROW RIGHT DOWN",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BB7",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BB8",
+      "name": "UPWARDS WHITE ARROW FROM BAR WITH HORIZONTAL BAR",
+      "donor": "iosevka",
+      "source_codepoint": "2BB8",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BB9",
+      "name": "UP ARROWHEAD IN A RECTANGLE BOX",
+      "donor": "iosevka",
+      "source_codepoint": "2BB9",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BBA",
+      "name": "OVERLAPPING WHITE SQUARES",
+      "donor": "iosevka",
+      "source_codepoint": "2BBA",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BBB",
+      "name": "OVERLAPPING WHITE AND BLACK SQUARES",
+      "donor": "iosevka",
+      "source_codepoint": "2BBB",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BBC",
+      "name": "OVERLAPPING BLACK SQUARES",
+      "donor": "iosevka",
+      "source_codepoint": "2BBC",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BBD",
+      "name": "BALLOT BOX WITH LIGHT X",
+      "donor": "iosevka",
+      "source_codepoint": "2BBD",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BBE",
+      "name": "CIRCLED X",
+      "donor": "iosevka",
+      "source_codepoint": "2BBE",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BBF",
+      "name": "CIRCLED BOLD X",
+      "donor": "iosevka",
+      "source_codepoint": "2BBF",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BC0",
+      "name": "BLACK SQUARE CENTRED",
+      "donor": "iosevka",
+      "source_codepoint": "2BC0",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BC1",
+      "name": "BLACK DIAMOND CENTRED",
+      "donor": "iosevka",
+      "source_codepoint": "2BC1",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BC2",
+      "name": "TURNED BLACK PENTAGON",
+      "donor": "iosevka",
+      "source_codepoint": "2BC2",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BC3",
+      "name": "HORIZONTAL BLACK OCTAGON",
+      "donor": "iosevka",
+      "source_codepoint": "2BC3",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BC4",
+      "name": "BLACK OCTAGON",
+      "donor": "iosevka",
+      "source_codepoint": "2BC4",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BC5",
+      "name": "BLACK MEDIUM UP-POINTING TRIANGLE CENTRED",
+      "donor": "iosevka",
+      "source_codepoint": "2BC5",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BC6",
+      "name": "BLACK MEDIUM DOWN-POINTING TRIANGLE CENTRED",
+      "donor": "iosevka",
+      "source_codepoint": "2BC6",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BC7",
+      "name": "BLACK MEDIUM LEFT-POINTING TRIANGLE CENTRED",
+      "donor": "iosevka",
+      "source_codepoint": "2BC7",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BC8",
+      "name": "BLACK MEDIUM RIGHT-POINTING TRIANGLE CENTRED",
+      "donor": "iosevka",
+      "source_codepoint": "2BC8",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BC9",
+      "name": "NEPTUNE FORM TWO",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BC9",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BCA",
+      "name": "TOP HALF BLACK CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "2BCA",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BCB",
+      "name": "BOTTOM HALF BLACK CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "2BCB",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BCC",
+      "name": "LIGHT FOUR POINTED BLACK CUSP",
+      "donor": "iosevka",
+      "source_codepoint": "2BCC",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BCD",
+      "name": "ROTATED LIGHT FOUR POINTED BLACK CUSP",
+      "donor": "iosevka",
+      "source_codepoint": "2BCD",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BCE",
+      "name": "WHITE FOUR POINTED CUSP",
+      "donor": "iosevka",
+      "source_codepoint": "2BCE",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BCF",
+      "name": "ROTATED WHITE FOUR POINTED CUSP",
+      "donor": "iosevka",
+      "source_codepoint": "2BCF",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BD0",
+      "name": "SQUARE POSITION INDICATOR",
+      "donor": "iosevka",
+      "source_codepoint": "2BD0",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BD1",
+      "name": "UNCERTAINTY SIGN",
+      "donor": "iosevka",
+      "source_codepoint": "2BD1",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BD2",
+      "name": "GROUP MARK",
+      "donor": "iosevka",
+      "source_codepoint": "2BD2",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BD3",
+      "name": "PLUTO FORM TWO",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BD3",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BD4",
+      "name": "PLUTO FORM THREE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BD4",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BD5",
+      "name": "PLUTO FORM FOUR",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BD5",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BD6",
+      "name": "PLUTO FORM FIVE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BD6",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BD7",
+      "name": "TRANSPLUTO",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BD7",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BD8",
+      "name": "PROSERPINA",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BD8",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BD9",
+      "name": "ASTRAEA",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BD9",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BDA",
+      "name": "HYGIEA",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BDA",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BDB",
+      "name": "PHOLUS",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BDB",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BDC",
+      "name": "NESSUS",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BDC",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BDD",
+      "name": "WHITE MOON SELENA",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BDD",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BDE",
+      "name": "BLACK DIAMOND ON CROSS",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BDE",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BDF",
+      "name": "TRUE LIGHT MOON ARTA",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BDF",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BE0",
+      "name": "CUPIDO",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BE0",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BE1",
+      "name": "HADES",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BE1",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BE2",
+      "name": "ZEUS",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BE2",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BE3",
+      "name": "KRONOS",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BE3",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BE4",
+      "name": "APOLLON",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BE4",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BE5",
+      "name": "ADMETOS",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BE5",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BE6",
+      "name": "VULCANUS",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BE6",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BE7",
+      "name": "POSEIDON",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BE7",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BE8",
+      "name": "LEFT HALF BLACK STAR",
+      "donor": "iosevka",
+      "source_codepoint": "2BE8",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BE9",
+      "name": "RIGHT HALF BLACK STAR",
+      "donor": "iosevka",
+      "source_codepoint": "2BE9",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BEA",
+      "name": "STAR WITH LEFT HALF BLACK",
+      "donor": "iosevka",
+      "source_codepoint": "2BEA",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BEB",
+      "name": "STAR WITH RIGHT HALF BLACK",
+      "donor": "iosevka",
+      "source_codepoint": "2BEB",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BEC",
+      "name": "LEFTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS",
+      "donor": "iosevka",
+      "source_codepoint": "2BEC",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BED",
+      "name": "UPWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS",
+      "donor": "iosevka",
+      "source_codepoint": "2BED",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BEE",
+      "name": "RIGHTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS",
+      "donor": "iosevka",
+      "source_codepoint": "2BEE",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BEF",
+      "name": "DOWNWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS",
+      "donor": "iosevka",
+      "source_codepoint": "2BEF",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BF0",
+      "name": "ERIS FORM ONE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF0",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BF1",
+      "name": "ERIS FORM TWO",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF1",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BF2",
+      "name": "SEDNA",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF2",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BF3",
+      "name": "RUSSIAN ASTROLOGICAL SYMBOL VIGINTILE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF3",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BF4",
+      "name": "RUSSIAN ASTROLOGICAL SYMBOL NOVILE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF4",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BF5",
+      "name": "RUSSIAN ASTROLOGICAL SYMBOL QUINTILE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF5",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BF6",
+      "name": "RUSSIAN ASTROLOGICAL SYMBOL BINOVILE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF6",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BF7",
+      "name": "RUSSIAN ASTROLOGICAL SYMBOL SENTAGON",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF7",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BF8",
+      "name": "RUSSIAN ASTROLOGICAL SYMBOL TREDECILE",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF8",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BF9",
+      "name": "EQUALS SIGN WITH INFINITY BELOW",
+      "donor": "noto-symbols2",
+      "source_codepoint": "2BF9",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BFA",
+      "name": "UNITED SYMBOL",
+      "donor": "iosevka",
+      "source_codepoint": "2BFA",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BFB",
+      "name": "SEPARATED SYMBOL",
+      "donor": "iosevka",
+      "source_codepoint": "2BFB",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BFC",
+      "name": "DOUBLED SYMBOL",
+      "donor": "iosevka",
+      "source_codepoint": "2BFC",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BFD",
+      "name": "PASSED SYMBOL",
+      "donor": "iosevka",
+      "source_codepoint": "2BFD",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BFE",
+      "name": "REVERSED RIGHT ANGLE",
+      "donor": "iosevka",
+      "source_codepoint": "2BFE",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "2BFF",
+      "name": "HELLSCHREIBER PAUSE SYMBOL",
+      "donor": "iosevka",
+      "source_codepoint": "2BFF",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FB00",
+      "name": "BLOCK SEXTANT-1",
+      "donor": "iosevka",
+      "source_codepoint": "1FB00",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB01",
+      "name": "BLOCK SEXTANT-2",
+      "donor": "iosevka",
+      "source_codepoint": "1FB01",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB02",
+      "name": "BLOCK SEXTANT-12",
+      "donor": "iosevka",
+      "source_codepoint": "1FB02",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB03",
+      "name": "BLOCK SEXTANT-3",
+      "donor": "iosevka",
+      "source_codepoint": "1FB03",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB04",
+      "name": "BLOCK SEXTANT-13",
+      "donor": "iosevka",
+      "source_codepoint": "1FB04",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB05",
+      "name": "BLOCK SEXTANT-23",
+      "donor": "iosevka",
+      "source_codepoint": "1FB05",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB06",
+      "name": "BLOCK SEXTANT-123",
+      "donor": "iosevka",
+      "source_codepoint": "1FB06",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB07",
+      "name": "BLOCK SEXTANT-4",
+      "donor": "iosevka",
+      "source_codepoint": "1FB07",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB08",
+      "name": "BLOCK SEXTANT-14",
+      "donor": "iosevka",
+      "source_codepoint": "1FB08",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB09",
+      "name": "BLOCK SEXTANT-24",
+      "donor": "iosevka",
+      "source_codepoint": "1FB09",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB0A",
+      "name": "BLOCK SEXTANT-124",
+      "donor": "iosevka",
+      "source_codepoint": "1FB0A",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB0B",
+      "name": "BLOCK SEXTANT-34",
+      "donor": "iosevka",
+      "source_codepoint": "1FB0B",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB0C",
+      "name": "BLOCK SEXTANT-134",
+      "donor": "iosevka",
+      "source_codepoint": "1FB0C",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB0D",
+      "name": "BLOCK SEXTANT-234",
+      "donor": "iosevka",
+      "source_codepoint": "1FB0D",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB0E",
+      "name": "BLOCK SEXTANT-1234",
+      "donor": "iosevka",
+      "source_codepoint": "1FB0E",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB0F",
+      "name": "BLOCK SEXTANT-5",
+      "donor": "iosevka",
+      "source_codepoint": "1FB0F",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB10",
+      "name": "BLOCK SEXTANT-15",
+      "donor": "iosevka",
+      "source_codepoint": "1FB10",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB11",
+      "name": "BLOCK SEXTANT-25",
+      "donor": "iosevka",
+      "source_codepoint": "1FB11",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB12",
+      "name": "BLOCK SEXTANT-125",
+      "donor": "iosevka",
+      "source_codepoint": "1FB12",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB13",
+      "name": "BLOCK SEXTANT-35",
+      "donor": "iosevka",
+      "source_codepoint": "1FB13",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB14",
+      "name": "BLOCK SEXTANT-235",
+      "donor": "iosevka",
+      "source_codepoint": "1FB14",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB15",
+      "name": "BLOCK SEXTANT-1235",
+      "donor": "iosevka",
+      "source_codepoint": "1FB15",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB16",
+      "name": "BLOCK SEXTANT-45",
+      "donor": "iosevka",
+      "source_codepoint": "1FB16",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB17",
+      "name": "BLOCK SEXTANT-145",
+      "donor": "iosevka",
+      "source_codepoint": "1FB17",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB18",
+      "name": "BLOCK SEXTANT-245",
+      "donor": "iosevka",
+      "source_codepoint": "1FB18",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB19",
+      "name": "BLOCK SEXTANT-1245",
+      "donor": "iosevka",
+      "source_codepoint": "1FB19",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB1A",
+      "name": "BLOCK SEXTANT-345",
+      "donor": "iosevka",
+      "source_codepoint": "1FB1A",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB1B",
+      "name": "BLOCK SEXTANT-1345",
+      "donor": "iosevka",
+      "source_codepoint": "1FB1B",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB1C",
+      "name": "BLOCK SEXTANT-2345",
+      "donor": "iosevka",
+      "source_codepoint": "1FB1C",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB1D",
+      "name": "BLOCK SEXTANT-12345",
+      "donor": "iosevka",
+      "source_codepoint": "1FB1D",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB1E",
+      "name": "BLOCK SEXTANT-6",
+      "donor": "iosevka",
+      "source_codepoint": "1FB1E",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB1F",
+      "name": "BLOCK SEXTANT-16",
+      "donor": "iosevka",
+      "source_codepoint": "1FB1F",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB20",
+      "name": "BLOCK SEXTANT-26",
+      "donor": "iosevka",
+      "source_codepoint": "1FB20",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB21",
+      "name": "BLOCK SEXTANT-126",
+      "donor": "iosevka",
+      "source_codepoint": "1FB21",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB22",
+      "name": "BLOCK SEXTANT-36",
+      "donor": "iosevka",
+      "source_codepoint": "1FB22",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB23",
+      "name": "BLOCK SEXTANT-136",
+      "donor": "iosevka",
+      "source_codepoint": "1FB23",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB24",
+      "name": "BLOCK SEXTANT-236",
+      "donor": "iosevka",
+      "source_codepoint": "1FB24",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB25",
+      "name": "BLOCK SEXTANT-1236",
+      "donor": "iosevka",
+      "source_codepoint": "1FB25",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB26",
+      "name": "BLOCK SEXTANT-46",
+      "donor": "iosevka",
+      "source_codepoint": "1FB26",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB27",
+      "name": "BLOCK SEXTANT-146",
+      "donor": "iosevka",
+      "source_codepoint": "1FB27",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB28",
+      "name": "BLOCK SEXTANT-1246",
+      "donor": "iosevka",
+      "source_codepoint": "1FB28",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB29",
+      "name": "BLOCK SEXTANT-346",
+      "donor": "iosevka",
+      "source_codepoint": "1FB29",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB2A",
+      "name": "BLOCK SEXTANT-1346",
+      "donor": "iosevka",
+      "source_codepoint": "1FB2A",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB2B",
+      "name": "BLOCK SEXTANT-2346",
+      "donor": "iosevka",
+      "source_codepoint": "1FB2B",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB2C",
+      "name": "BLOCK SEXTANT-12346",
+      "donor": "iosevka",
+      "source_codepoint": "1FB2C",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB2D",
+      "name": "BLOCK SEXTANT-56",
+      "donor": "iosevka",
+      "source_codepoint": "1FB2D",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB2E",
+      "name": "BLOCK SEXTANT-156",
+      "donor": "iosevka",
+      "source_codepoint": "1FB2E",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB2F",
+      "name": "BLOCK SEXTANT-256",
+      "donor": "iosevka",
+      "source_codepoint": "1FB2F",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB30",
+      "name": "BLOCK SEXTANT-1256",
+      "donor": "iosevka",
+      "source_codepoint": "1FB30",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB31",
+      "name": "BLOCK SEXTANT-356",
+      "donor": "iosevka",
+      "source_codepoint": "1FB31",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB32",
+      "name": "BLOCK SEXTANT-1356",
+      "donor": "iosevka",
+      "source_codepoint": "1FB32",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB33",
+      "name": "BLOCK SEXTANT-2356",
+      "donor": "iosevka",
+      "source_codepoint": "1FB33",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB34",
+      "name": "BLOCK SEXTANT-12356",
+      "donor": "iosevka",
+      "source_codepoint": "1FB34",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB35",
+      "name": "BLOCK SEXTANT-456",
+      "donor": "iosevka",
+      "source_codepoint": "1FB35",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB36",
+      "name": "BLOCK SEXTANT-1456",
+      "donor": "iosevka",
+      "source_codepoint": "1FB36",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB37",
+      "name": "BLOCK SEXTANT-2456",
+      "donor": "iosevka",
+      "source_codepoint": "1FB37",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB38",
+      "name": "BLOCK SEXTANT-12456",
+      "donor": "iosevka",
+      "source_codepoint": "1FB38",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB39",
+      "name": "BLOCK SEXTANT-3456",
+      "donor": "iosevka",
+      "source_codepoint": "1FB39",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB3A",
+      "name": "BLOCK SEXTANT-13456",
+      "donor": "iosevka",
+      "source_codepoint": "1FB3A",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB3B",
+      "name": "BLOCK SEXTANT-23456",
+      "donor": "iosevka",
+      "source_codepoint": "1FB3B",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB3C",
+      "name": "LOWER LEFT BLOCK DIAGONAL LOWER MIDDLE LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB3C",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB3D",
+      "name": "LOWER LEFT BLOCK DIAGONAL LOWER MIDDLE LEFT TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB3D",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB3E",
+      "name": "LOWER LEFT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB3E",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB3F",
+      "name": "LOWER LEFT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB3F",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB40",
+      "name": "LOWER LEFT BLOCK DIAGONAL UPPER LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB40",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB41",
+      "name": "LOWER RIGHT BLOCK DIAGONAL UPPER MIDDLE LEFT TO UPPER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB41",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB42",
+      "name": "LOWER RIGHT BLOCK DIAGONAL UPPER MIDDLE LEFT TO UPPER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB42",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB43",
+      "name": "LOWER RIGHT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB43",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB44",
+      "name": "LOWER RIGHT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB44",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB45",
+      "name": "LOWER RIGHT BLOCK DIAGONAL LOWER LEFT TO UPPER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB45",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB46",
+      "name": "LOWER RIGHT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB46",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB47",
+      "name": "LOWER RIGHT BLOCK DIAGONAL LOWER CENTRE TO LOWER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB47",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB48",
+      "name": "LOWER RIGHT BLOCK DIAGONAL LOWER LEFT TO LOWER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB48",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB49",
+      "name": "LOWER RIGHT BLOCK DIAGONAL LOWER CENTRE TO UPPER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB49",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB4A",
+      "name": "LOWER RIGHT BLOCK DIAGONAL LOWER LEFT TO UPPER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB4A",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB4B",
+      "name": "LOWER RIGHT BLOCK DIAGONAL LOWER CENTRE TO UPPER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB4B",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB4C",
+      "name": "LOWER LEFT BLOCK DIAGONAL UPPER CENTRE TO UPPER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB4C",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB4D",
+      "name": "LOWER LEFT BLOCK DIAGONAL UPPER LEFT TO UPPER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB4D",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB4E",
+      "name": "LOWER LEFT BLOCK DIAGONAL UPPER CENTRE TO LOWER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB4E",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB4F",
+      "name": "LOWER LEFT BLOCK DIAGONAL UPPER LEFT TO LOWER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB4F",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB50",
+      "name": "LOWER LEFT BLOCK DIAGONAL UPPER CENTRE TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB50",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB51",
+      "name": "LOWER LEFT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB51",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB52",
+      "name": "UPPER RIGHT BLOCK DIAGONAL LOWER MIDDLE LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB52",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB53",
+      "name": "UPPER RIGHT BLOCK DIAGONAL LOWER MIDDLE LEFT TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB53",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB54",
+      "name": "UPPER RIGHT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB54",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB55",
+      "name": "UPPER RIGHT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB55",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB56",
+      "name": "UPPER RIGHT BLOCK DIAGONAL UPPER LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB56",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB57",
+      "name": "UPPER LEFT BLOCK DIAGONAL UPPER MIDDLE LEFT TO UPPER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB57",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB58",
+      "name": "UPPER LEFT BLOCK DIAGONAL UPPER MIDDLE LEFT TO UPPER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB58",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB59",
+      "name": "UPPER LEFT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB59",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB5A",
+      "name": "UPPER LEFT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB5A",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB5B",
+      "name": "UPPER LEFT BLOCK DIAGONAL LOWER LEFT TO UPPER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB5B",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB5C",
+      "name": "UPPER LEFT BLOCK DIAGONAL LOWER MIDDLE LEFT TO UPPER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB5C",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB5D",
+      "name": "UPPER LEFT BLOCK DIAGONAL LOWER CENTRE TO LOWER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB5D",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB5E",
+      "name": "UPPER LEFT BLOCK DIAGONAL LOWER LEFT TO LOWER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB5E",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB5F",
+      "name": "UPPER LEFT BLOCK DIAGONAL LOWER CENTRE TO UPPER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB5F",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB60",
+      "name": "UPPER LEFT BLOCK DIAGONAL LOWER LEFT TO UPPER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB60",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB61",
+      "name": "UPPER LEFT BLOCK DIAGONAL LOWER CENTRE TO UPPER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB61",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB62",
+      "name": "UPPER RIGHT BLOCK DIAGONAL UPPER CENTRE TO UPPER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB62",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB63",
+      "name": "UPPER RIGHT BLOCK DIAGONAL UPPER LEFT TO UPPER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB63",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB64",
+      "name": "UPPER RIGHT BLOCK DIAGONAL UPPER CENTRE TO LOWER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB64",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB65",
+      "name": "UPPER RIGHT BLOCK DIAGONAL UPPER LEFT TO LOWER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB65",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB66",
+      "name": "UPPER RIGHT BLOCK DIAGONAL UPPER CENTRE TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB66",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB67",
+      "name": "UPPER RIGHT BLOCK DIAGONAL UPPER MIDDLE LEFT TO LOWER MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FB67",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB68",
+      "name": "UPPER AND RIGHT AND LOWER TRIANGULAR THREE QUARTERS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB68",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB69",
+      "name": "LEFT AND LOWER AND RIGHT TRIANGULAR THREE QUARTERS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB69",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB6A",
+      "name": "UPPER AND LEFT AND LOWER TRIANGULAR THREE QUARTERS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB6A",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB6B",
+      "name": "LEFT AND UPPER AND RIGHT TRIANGULAR THREE QUARTERS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB6B",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB6C",
+      "name": "LEFT TRIANGULAR ONE QUARTER BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB6C",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB6D",
+      "name": "UPPER TRIANGULAR ONE QUARTER BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB6D",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB6E",
+      "name": "RIGHT TRIANGULAR ONE QUARTER BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB6E",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB6F",
+      "name": "LOWER TRIANGULAR ONE QUARTER BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB6F",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB70",
+      "name": "VERTICAL ONE EIGHTH BLOCK-2",
+      "donor": "iosevka",
+      "source_codepoint": "1FB70",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB71",
+      "name": "VERTICAL ONE EIGHTH BLOCK-3",
+      "donor": "iosevka",
+      "source_codepoint": "1FB71",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB72",
+      "name": "VERTICAL ONE EIGHTH BLOCK-4",
+      "donor": "iosevka",
+      "source_codepoint": "1FB72",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB73",
+      "name": "VERTICAL ONE EIGHTH BLOCK-5",
+      "donor": "iosevka",
+      "source_codepoint": "1FB73",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB74",
+      "name": "VERTICAL ONE EIGHTH BLOCK-6",
+      "donor": "iosevka",
+      "source_codepoint": "1FB74",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB75",
+      "name": "VERTICAL ONE EIGHTH BLOCK-7",
+      "donor": "iosevka",
+      "source_codepoint": "1FB75",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB76",
+      "name": "HORIZONTAL ONE EIGHTH BLOCK-2",
+      "donor": "iosevka",
+      "source_codepoint": "1FB76",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB77",
+      "name": "HORIZONTAL ONE EIGHTH BLOCK-3",
+      "donor": "iosevka",
+      "source_codepoint": "1FB77",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB78",
+      "name": "HORIZONTAL ONE EIGHTH BLOCK-4",
+      "donor": "iosevka",
+      "source_codepoint": "1FB78",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB79",
+      "name": "HORIZONTAL ONE EIGHTH BLOCK-5",
+      "donor": "iosevka",
+      "source_codepoint": "1FB79",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB7A",
+      "name": "HORIZONTAL ONE EIGHTH BLOCK-6",
+      "donor": "iosevka",
+      "source_codepoint": "1FB7A",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB7B",
+      "name": "HORIZONTAL ONE EIGHTH BLOCK-7",
+      "donor": "iosevka",
+      "source_codepoint": "1FB7B",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB7C",
+      "name": "LEFT AND LOWER ONE EIGHTH BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB7C",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB7D",
+      "name": "LEFT AND UPPER ONE EIGHTH BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB7D",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB7E",
+      "name": "RIGHT AND UPPER ONE EIGHTH BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB7E",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB7F",
+      "name": "RIGHT AND LOWER ONE EIGHTH BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB7F",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB80",
+      "name": "UPPER AND LOWER ONE EIGHTH BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB80",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB81",
+      "name": "HORIZONTAL ONE EIGHTH BLOCK-1358",
+      "donor": "iosevka",
+      "source_codepoint": "1FB81",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB82",
+      "name": "UPPER ONE QUARTER BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB82",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB83",
+      "name": "UPPER THREE EIGHTHS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB83",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB84",
+      "name": "UPPER FIVE EIGHTHS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB84",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB85",
+      "name": "UPPER THREE QUARTERS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB85",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB86",
+      "name": "UPPER SEVEN EIGHTHS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB86",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB87",
+      "name": "RIGHT ONE QUARTER BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB87",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB88",
+      "name": "RIGHT THREE EIGHTHS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB88",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB89",
+      "name": "RIGHT FIVE EIGHTHS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB89",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB8A",
+      "name": "RIGHT THREE QUARTERS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB8A",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB8B",
+      "name": "RIGHT SEVEN EIGHTHS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB8B",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB8C",
+      "name": "LEFT HALF MEDIUM SHADE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB8C",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB8D",
+      "name": "RIGHT HALF MEDIUM SHADE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB8D",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB8E",
+      "name": "UPPER HALF MEDIUM SHADE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB8E",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB8F",
+      "name": "LOWER HALF MEDIUM SHADE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB8F",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB90",
+      "name": "INVERSE MEDIUM SHADE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB90",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB91",
+      "name": "UPPER HALF BLOCK AND LOWER HALF INVERSE MEDIUM SHADE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB91",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB92",
+      "name": "UPPER HALF INVERSE MEDIUM SHADE AND LOWER HALF BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB92",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB94",
+      "name": "LEFT HALF INVERSE MEDIUM SHADE AND RIGHT HALF BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB94",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB95",
+      "name": "CHECKER BOARD FILL",
+      "donor": "iosevka",
+      "source_codepoint": "1FB95",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB96",
+      "name": "INVERSE CHECKER BOARD FILL",
+      "donor": "iosevka",
+      "source_codepoint": "1FB96",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB97",
+      "name": "HEAVY HORIZONTAL FILL",
+      "donor": "iosevka",
+      "source_codepoint": "1FB97",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB98",
+      "name": "UPPER LEFT TO LOWER RIGHT FILL",
+      "donor": "iosevka",
+      "source_codepoint": "1FB98",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB99",
+      "name": "UPPER RIGHT TO LOWER LEFT FILL",
+      "donor": "iosevka",
+      "source_codepoint": "1FB99",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB9A",
+      "name": "UPPER AND LOWER TRIANGULAR HALF BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB9A",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB9B",
+      "name": "LEFT AND RIGHT TRIANGULAR HALF BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FB9B",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB9C",
+      "name": "UPPER LEFT TRIANGULAR MEDIUM SHADE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB9C",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB9D",
+      "name": "UPPER RIGHT TRIANGULAR MEDIUM SHADE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB9D",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB9E",
+      "name": "LOWER RIGHT TRIANGULAR MEDIUM SHADE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB9E",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FB9F",
+      "name": "LOWER LEFT TRIANGULAR MEDIUM SHADE",
+      "donor": "iosevka",
+      "source_codepoint": "1FB9F",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBA0",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBA0",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBA1",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBA1",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBA2",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBA2",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBA3",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBA3",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBA4",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBA4",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBA5",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBA5",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBA6",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO LOWER CENTRE TO MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBA6",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBA7",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO UPPER CENTRE TO MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBA7",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBA8",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT AND MIDDLE RIGHT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBA8",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBA9",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT AND MIDDLE LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBA9",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBAA",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT TO LOWER CENTRE TO MIDDLE LEFT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBAA",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBAB",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT TO LOWER CENTRE TO MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBAB",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBAC",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO UPPER CENTRE TO MIDDLE RIGHT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBAC",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBAD",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO UPPER CENTRE TO MIDDLE LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBAD",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBAE",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL DIAMOND",
+      "donor": "iosevka",
+      "source_codepoint": "1FBAE",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBAF",
+      "name": "BOX DRAWINGS LIGHT HORIZONTAL WITH VERTICAL STROKE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBAF",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBB0",
+      "name": "ARROWHEAD-SHAPED POINTER",
+      "donor": "iosevka",
+      "source_codepoint": "1FBB0",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBB1",
+      "name": "INVERSE CHECK MARK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBB1",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBB2",
+      "name": "LEFT HALF RUNNING MAN",
+      "donor": "iosevka",
+      "source_codepoint": "1FBB2",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBB3",
+      "name": "RIGHT HALF RUNNING MAN",
+      "donor": "iosevka",
+      "source_codepoint": "1FBB3",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBB4",
+      "name": "INVERSE DOWNWARDS ARROW WITH TIP LEFTWARDS",
+      "donor": "iosevka",
+      "source_codepoint": "1FBB4",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBB5",
+      "name": "LEFTWARDS ARROW AND UPPER AND LOWER ONE EIGHTH BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBB5",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBB6",
+      "name": "RIGHTWARDS ARROW AND UPPER AND LOWER ONE EIGHTH BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBB6",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBB7",
+      "name": "DOWNWARDS ARROW AND RIGHT ONE EIGHTH BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBB7",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBB8",
+      "name": "UPWARDS ARROW AND RIGHT ONE EIGHTH BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBB8",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBB9",
+      "name": "LEFT HALF FOLDER",
+      "donor": "iosevka",
+      "source_codepoint": "1FBB9",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBBA",
+      "name": "RIGHT HALF FOLDER",
+      "donor": "iosevka",
+      "source_codepoint": "1FBBA",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBBB",
+      "name": "VOIDED GREEK CROSS",
+      "donor": "iosevka",
+      "source_codepoint": "1FBBB",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBBC",
+      "name": "RIGHT OPEN SQUARED DOT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBBC",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBBD",
+      "name": "NEGATIVE DIAGONAL CROSS",
+      "donor": "iosevka",
+      "source_codepoint": "1FBBD",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBBE",
+      "name": "NEGATIVE DIAGONAL MIDDLE RIGHT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBBE",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBBF",
+      "name": "NEGATIVE DIAGONAL DIAMOND",
+      "donor": "iosevka",
+      "source_codepoint": "1FBBF",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBC0",
+      "name": "WHITE HEAVY SALTIRE WITH ROUNDED CORNERS",
+      "donor": "iosevka",
+      "source_codepoint": "1FBC0",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBC1",
+      "name": "LEFT THIRD WHITE RIGHT POINTING INDEX",
+      "donor": "iosevka",
+      "source_codepoint": "1FBC1",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBC2",
+      "name": "MIDDLE THIRD WHITE RIGHT POINTING INDEX",
+      "donor": "iosevka",
+      "source_codepoint": "1FBC2",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBC3",
+      "name": "RIGHT THIRD WHITE RIGHT POINTING INDEX",
+      "donor": "iosevka",
+      "source_codepoint": "1FBC3",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBC4",
+      "name": "NEGATIVE SQUARED QUESTION MARK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBC4",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBC5",
+      "name": "STICK FIGURE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBC5",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBC6",
+      "name": "STICK FIGURE WITH ARMS RAISED",
+      "donor": "iosevka",
+      "source_codepoint": "1FBC6",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBC7",
+      "name": "STICK FIGURE LEANING LEFT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBC7",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBC8",
+      "name": "STICK FIGURE LEANING RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBC8",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBC9",
+      "name": "STICK FIGURE WITH DRESS",
+      "donor": "iosevka",
+      "source_codepoint": "1FBC9",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBCA",
+      "name": "WHITE UP-POINTING CHEVRON",
+      "donor": "iosevka",
+      "source_codepoint": "1FBCA",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBCB",
+      "name": "WHITE CROSS MARK",
+      "donor": "kreative-square",
+      "source_codepoint": "1FBCB",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBCC",
+      "name": "RAISED SMALL LEFT SQUARE BRACKET",
+      "donor": "iosevka",
+      "source_codepoint": "1FBCC",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBCD",
+      "name": "BLACK SMALL UP-POINTING CHEVRON",
+      "donor": "kreative-square",
+      "source_codepoint": "1FBCD",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBCE",
+      "name": "LEFT TWO THIRDS BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBCE",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBCF",
+      "name": "LEFT ONE THIRD BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBCF",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBD0",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO LOWER LEFT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBD0",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBD1",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO MIDDLE LEFT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBD1",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBD2",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBD2",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBD3",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBD3",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBD4",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBD4",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBD5",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBD5",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBD6",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER CENTRE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBD6",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBD7",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO LOWER LEFT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBD7",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBD8",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE CENTRE TO UPPER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBD8",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBD9",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO MIDDLE CENTRE TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBD9",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBDA",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL LOWER LEFT TO MIDDLE CENTRE TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBDA",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBDB",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE CENTRE TO LOWER LEFT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBDB",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBDC",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER CENTRE TO UPPER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBDC",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBDD",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO MIDDLE LEFT TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBDD",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBDE",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL LOWER LEFT TO UPPER CENTRE TO LOWER RIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBDE",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBDF",
+      "name": "BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE RIGHT TO LOWER LEFT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBDF",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBE0",
+      "name": "TOP JUSTIFIED LOWER HALF WHITE CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBE0",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBE1",
+      "name": "RIGHT JUSTIFIED LEFT HALF WHITE CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBE1",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBE2",
+      "name": "BOTTOM JUSTIFIED UPPER HALF WHITE CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBE2",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBE3",
+      "name": "LEFT JUSTIFIED RIGHT HALF WHITE CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBE3",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBE4",
+      "name": "UPPER CENTRE ONE QUARTER BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBE4",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBE5",
+      "name": "LOWER CENTRE ONE QUARTER BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBE5",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBE6",
+      "name": "MIDDLE LEFT ONE QUARTER BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBE6",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBE7",
+      "name": "MIDDLE RIGHT ONE QUARTER BLOCK",
+      "donor": "iosevka",
+      "source_codepoint": "1FBE7",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBE8",
+      "name": "TOP JUSTIFIED LOWER HALF BLACK CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBE8",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBE9",
+      "name": "RIGHT JUSTIFIED LEFT HALF BLACK CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBE9",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBEA",
+      "name": "BOTTOM JUSTIFIED UPPER HALF BLACK CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBEA",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBEB",
+      "name": "LEFT JUSTIFIED RIGHT HALF BLACK CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBEB",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBEC",
+      "name": "TOP RIGHT JUSTIFIED LOWER LEFT QUARTER BLACK CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBEC",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBED",
+      "name": "BOTTOM LEFT JUSTIFIED UPPER RIGHT QUARTER BLACK CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBED",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBEE",
+      "name": "BOTTOM RIGHT JUSTIFIED UPPER LEFT QUARTER BLACK CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBEE",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBEF",
+      "name": "TOP LEFT JUSTIFIED LOWER RIGHT QUARTER BLACK CIRCLE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBEF",
+      "transform": "fit full terminal cell, 575 by 1230; clip overhangs at cell edges"
+    },
+    {
+      "codepoint": "1FBF0",
+      "name": "SEGMENTED DIGIT ZERO",
+      "donor": "iosevka",
+      "source_codepoint": "1FBF0",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBF1",
+      "name": "SEGMENTED DIGIT ONE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBF1",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBF2",
+      "name": "SEGMENTED DIGIT TWO",
+      "donor": "iosevka",
+      "source_codepoint": "1FBF2",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBF3",
+      "name": "SEGMENTED DIGIT THREE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBF3",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBF4",
+      "name": "SEGMENTED DIGIT FOUR",
+      "donor": "iosevka",
+      "source_codepoint": "1FBF4",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBF5",
+      "name": "SEGMENTED DIGIT FIVE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBF5",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBF6",
+      "name": "SEGMENTED DIGIT SIX",
+      "donor": "iosevka",
+      "source_codepoint": "1FBF6",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBF7",
+      "name": "SEGMENTED DIGIT SEVEN",
+      "donor": "iosevka",
+      "source_codepoint": "1FBF7",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBF8",
+      "name": "SEGMENTED DIGIT EIGHT",
+      "donor": "iosevka",
+      "source_codepoint": "1FBF8",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBF9",
+      "name": "SEGMENTED DIGIT NINE",
+      "donor": "iosevka",
+      "source_codepoint": "1FBF9",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    },
+    {
+      "codepoint": "1FBFA",
+      "name": "ALARM BELL SYMBOL",
+      "donor": "kreative-square",
+      "source_codepoint": "1FBFA",
+      "transform": "uniform fit with side bearings; center in symbol area"
+    }
+  ]
+}

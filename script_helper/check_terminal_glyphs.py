@@ -7,6 +7,7 @@ Defaults to the four source SFDs. Supply exported TTF/OTF files to check the bui
 """
 
 import sys
+import json
 import unicodedata
 from pathlib import Path
 
@@ -37,11 +38,15 @@ def check(path):
             for contour in glyph.foreground:
                 assert contour.closed and contour.isClockwise(), (path, hex(cp), "contour")
                 points = list(contour)
-                assert len(points) == 4 and all(p.on_curve for p in points)
                 xs, ys = [p.x for p in points], [p.y for p in points]
-                assert len(set(xs)) == 2 and len(set(ys)) == 2
-                assert abs(max(xs) - min(xs) - 178) <= 1
-                assert abs(max(ys) - min(ys) - 178) <= 1
+                corners = {(x, y) for x in (min(xs), max(xs)) for y in (min(ys), max(ys))}
+                assert corners <= {(p.x, p.y) for p in points if p.on_curve}, (path, hex(cp), 'corners')
+                # TTF conversion may retain collinear control points near a
+                # rounded corner. Verify the rectangle itself, not point count.
+                assert all(a.x == b.x or a.y == b.y for a, b in zip(points, points[1:] + points[:1]))
+                assert all(p.x in (min(xs), max(xs)) or p.y in (min(ys), max(ys)) for p in points)
+                assert abs(max(xs) - min(xs) - 172.5) <= 1
+                assert abs(max(ys) - min(ys) - 184.5) <= 1
                 actual.append(((min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2))
             assert len(actual) == len(expected), (path, hex(cp), "dot count")
             for observed, wanted in zip(sorted(actual), expected):
@@ -53,7 +58,22 @@ def check(path):
             assert font[cp].width == width
             left, bottom, right, top = font[cp].boundingBox()
             assert right > left and top > bottom, (path, hex(cp), "empty arrow")
-        print(f"PASS {path}: 256 Braille patterns, metrics, ASCII, boxes, blocks, arrows")
+        additions = json.loads((Path(__file__).parent / 'symbol_additions.json').read_text())['additions']
+        for item in additions:
+            cp = int(item['codepoint'], 16)
+            assert cp in font, (path, hex(cp), 'missing audited symbol')
+            glyph = font[cp]
+            assert glyph.width == width, (path, hex(cp), 'symbol advance')
+            left, bottom, right, top = glyph.boundingBox()
+            assert right > left and top > bottom, (path, hex(cp), 'empty symbol')
+            assert left >= -1 and right <= width + 1 and bottom >= -321 and top <= 911, (path, hex(cp), 'outside cell')
+        for cp in (0x2B80, 0x2B81, 0x2B84, 0x2B85, 0x2B86, 0x2B87):
+            assert len(font[cp].foreground) == 2, (path, hex(cp), 'paired arrow lost a component')
+        if 'NerdFont' in str(path):
+            assert 'Nerd Fonts 3.5.1' in font.version, (path, font.version, 'wrong patcher version')
+            style = Path(path).stem.removeprefix('MonofokiNerdFont-')
+            assert font.fontname == f'MonofokiNF-{style}', (path, font.fontname, 'terminal profile name changed')
+        print(f"PASS {path}: 256 Braille patterns, {len(additions)} added symbols, metrics, ASCII, boxes, blocks, arrows")
     finally:
         font.close()
 

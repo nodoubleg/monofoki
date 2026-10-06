@@ -45,8 +45,11 @@ def main():
                 parser.error(f'missing CI font: {source}')
             shutil.copy2(source, output / 'fonts' / name)
             hashes[name] = hashlib.sha256(source.read_bytes()).hexdigest()
-    for name, directory in (('LICENSE-Monofoki', args.regular), ('LICENSE-nerd-font', args.nerd), ('license-audit-nerd-font.md', args.nerd)):
-        shutil.copy2(directory / name, output / 'licenses' / name)
+    for directory in (args.regular, args.nerd):
+        for name in ('LICENSE-*', '*audit*.md', 'NOTICES-*.md'):
+            for license_path in directory.glob(name):
+                shutil.copy2(license_path, output / 'licenses' / license_path.name)
+    dependencies = json.loads((ROOT / 'script_helper/build_dependencies.json').read_text())
     stylesheet = (output / 'style.css').read_text()
     for name, digest in hashes.items():
         stylesheet = stylesheet.replace(f'fonts/{name}', f'fonts/{name}?v={digest}')
@@ -75,7 +78,9 @@ def main():
     document = re.sub(r'\b(href|src|poster)="([^"]+)"', version_asset, document)
     (output / 'index.html').write_text(document)
     (output / 'build.json').write_text(json.dumps({'revision': args.revision, 'build_url': args.build_url,
-                                                'font_sha256': hashes, 'vhs_version': '0.12.1'}, indent=2) + '\n')
+                                                'font_sha256': hashes, 'vhs_version': '0.12.1',
+                                                'nerd_fonts_version': dependencies['nerd_fonts_version'],
+                                                'unicode_version': dependencies['unicode_version']}, indent=2) + '\n')
     (output / '.nojekyll').touch()
     print(f'Staged {len(hashes)} CI webfonts and {len(gallery)} shared art pieces in {output}')
 

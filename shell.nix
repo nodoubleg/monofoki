@@ -13,12 +13,12 @@ let
 in
   pkgs.mkShell {
     nativeBuildInputs = [
-      pkgs.python313
+      (pkgs.python313.withPackages (ps: [ ps.fonttools ]))
       sfdnormalize
       pkgs.fontforge-gtk
       pkgs.ttfautohint
       pkgs.woff2
-      pkgs.nerd-font-patcher
+      pkgs.unzip
       pkgs.curl
     ];
   }

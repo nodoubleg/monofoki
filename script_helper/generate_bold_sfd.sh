@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 fontforge - << END
+import json
 font = fontforge.open("src/monofoki-Regular.sfd")
 
 font.fontname = 'Monofoki-Bold'
@@ -13,6 +14,8 @@ font.os2_weight = 700
 font.selection.all() # TODO: exclude box drawing characters, etc.
 # Keep terminal Braille density and grid identical in every style.
 font.selection.select(("ranges", "unicode", "less"), 0x2800, 0x28ff)
+for item in json.load(open("script_helper/symbol_additions.json"))["additions"]:
+    font.selection.select(("unicode", "less"), int(item["codepoint"], 16))
 font.changeWeight(20, "auto", 0, 0, "squish")
 
 font.save("src/monofoki-Bold.sfd")
@@ -20,6 +23,7 @@ font.save("src/monofoki-Bold.sfd")
 END
 
 fontforge - << END
+import json
 font = fontforge.open("src/monofoki-Italic.sfd")
 
 font.fontname = 'Monofoki-Bold-Italic'
@@ -32,6 +36,8 @@ font.os2_weight = 700
 font.selection.all() # TODO: exclude box drawing characters, etc.
 # Keep terminal Braille density and grid identical in every style.
 font.selection.select(("ranges", "unicode", "less"), 0x2800, 0x28ff)
+for item in json.load(open("script_helper/symbol_additions.json"))["additions"]:
+    font.selection.select(("unicode", "less"), int(item["codepoint"], 16))
 font.changeWeight(20, "auto", 0, 0, "squish")
 
 font.save("src/monofoki-Bold-Italic.sfd")
