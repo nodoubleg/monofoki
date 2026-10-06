@@ -1,5 +1,7 @@
 # Fork of the font Mononoki; *Monofoki*
-Original repository: https://github.com/madmalik/mononoki
+
+This is a fork of [datMaffin/monofoki](https://github.com/datMaffin/monofoki), itself based on [Mononoki](https://github.com/madmalik/mononoki).
+Compared with datMaffin's fork, it adds all 256 Unicode Braille patterns in every style, restores three missing italic arrows, and provides CI builds of regular and Nerd Font variants.
 
 ## [Specimen](script_helper/specimen.pdf)
 
