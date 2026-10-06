@@ -27,4 +27,4 @@ For the recording, install [VHS](https://github.com/charmbracelet/vhs), `ttyd`, 
 vhs website/demo.tape
 ```
 
-The tape produces `_site/media/monofoki.mp4` and a PNG poster. It uses deterministic specimen scenes rather than live app sessions. The video has playback controls, a poster, and a text alternative; it does not autoplay. The font-build revision and per-file SHA-256 values are recorded in `_site/build.json`.
+The tape produces `_site/media/monofoki.mp4`. CI extracts a PNG poster from its final held artwork frame with FFmpeg. It uses deterministic specimen scenes rather than live app sessions. The video has playback controls, a poster, and a text alternative; it does not autoplay. The font-build revision and per-file SHA-256 values are recorded in `_site/build.json`.

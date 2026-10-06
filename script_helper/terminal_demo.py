@@ -37,22 +37,25 @@ def art_pieces():
     )
 
 
-def print_scene(scene):
+def print_scene(scene, styled=False):
+    def color(text, rgb):
+        return f'\033[38;2;{rgb}m{text}\033[0m' if styled else text
+
     if scene == "characters":
-        print("The characters worth getting opinionated about\n")
-        print(CHARACTER_SAMPLE)
+        print(color("The characters worth getting opinionated about", "255;132;255") + '\n')
+        print(color(CHARACTER_SAMPLE, "161;138;255"))
         print("\n0Oo  1lI|!  B8  rn m  (){}[]<>")
-        print("\n\033[1mBold\033[0m   \033[3mItalic\033[0m   \033[1;3mBold italic\033[0m")
+        styles = '\033[1mBold\033[0m   \033[3mItalic\033[0m   \033[1;3mBold italic\033[0m' if styled else 'Bold   Italic   Bold italic'
+        print('\n' + styles)
     elif scene == "icons":
-        print("Nerd Font icons + terminal graphics\n")
-        print("\uf07b  monofoki   \ue0a0 master   \uf120 python3")
-        print("\n┌──────────────────────────────┐")
-        print("│  ⇨ ⇩ ⇯   ░▒▓█   ⠁⠂⠄⠈⠐⠠⡀⢀  │")
-        print("└──────────────────────────────┘")
+        print(color("Nerd Font icons + terminal graphics", "255;132;255") + '\n')
+        print(color("\uf07b  monofoki   \ue0a0 master   \uf120 python3", "104;255;214"))
+        print(color("\n┌──────────────────────────────┐\n│  ⇨ ⇩ ⇯   ░▒▓█   ⠁⠂⠄⠈⠐⠠⡀⢀  │\n└──────────────────────────────┘", "161;138;255"))
     else:
+        colors = {'fox': '255;132;255', 'orbit': '104;255;214', 'city': '161;138;255'}
         for key, title, _, text in art_pieces():
             if scene in (key, "all"):
-                print(f"{title}\n\n{text}\n")
+                print(f"{title}\n\n{color(text, colors[key])}\n")
 
 
 def artwork(columns, rows):
@@ -86,7 +89,7 @@ def main():
                         help="print a scene used in the VHS specimen recording")
     args = parser.parse_args()
     if args.art or args.scene:
-        print_scene("all" if args.art else args.scene)
+        print_scene("all" if args.art else args.scene, styled=sys.stdout.isatty() and not args.plain)
         return
     if not 16 <= args.width <= 100:
         parser.error("--width must be between 16 and 100")

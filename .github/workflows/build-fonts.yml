@@ -151,6 +151,10 @@ jobs:
         run: |
           vhs website/demo.tape
           test -s _site/media/monofoki.mp4
+          # VHS Screenshot waits for a changed frame, which can capture the next
+          # command after a static scene. Use the final, held artwork frame.
+          ffmpeg -hide_banner -loglevel error -sseof -0.2 \
+            -i _site/media/monofoki.mp4 -frames:v 1 _site/media/demo-poster.png
           test -s _site/media/demo-poster.png
           ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1 _site/media/monofoki.mp4
 

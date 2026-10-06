@@ -39,14 +39,13 @@ Hide
 Type "clear"
 Enter
 Show
-Type "python3 script_helper/terminal_demo.py --scene orbit"
+Type "python3 script_helper/terminal_demo.py --scene city"
 Enter
-Sleep 4s
-Screenshot "_site/media/demo-poster.png"
+Sleep 3s
 Hide
 Type "clear"
 Enter
 Show
-Type "python3 script_helper/terminal_demo.py --scene city"
+Type "python3 script_helper/terminal_demo.py --scene orbit"
 Enter
-Sleep 3s
+Sleep 4s
