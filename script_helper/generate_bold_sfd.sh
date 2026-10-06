@@ -11,6 +11,8 @@ font.private['StemSnapV'] = [105]
 font.os2_weight = 700
 
 font.selection.all() # TODO: exclude box drawing characters, etc.
+# Keep terminal Braille density and grid identical in every style.
+font.selection.select(("ranges", "unicode", "less"), 0x2800, 0x28ff)
 font.changeWeight(20, "auto", 0, 0, "squish")
 
 font.save("src/monofoki-Bold.sfd")
@@ -28,6 +30,8 @@ font.private['StemSnapV'] = [105]
 font.os2_weight = 700
 
 font.selection.all() # TODO: exclude box drawing characters, etc.
+# Keep terminal Braille density and grid identical in every style.
+font.selection.select(("ranges", "unicode", "less"), 0x2800, 0x28ff)
 font.changeWeight(20, "auto", 0, 0, "squish")
 
 font.save("src/monofoki-Bold-Italic.sfd")

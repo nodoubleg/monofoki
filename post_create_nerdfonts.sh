@@ -17,25 +17,26 @@ if [ -f "export/Monofoki-Bold.otf" ]; then
 fi
 
 
-if [ -f "export/Monofoki-Regular-hinted.ttf" ]; then
+# Only prefer hinted files made after the current unhinted build.
+if [ -f "export/Monofoki-Regular-hinted.ttf" ] && [ "export/Monofoki-Regular-hinted.ttf" -nt "export/Monofoki-Regular.ttf" ]; then
     nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Regular-hinted.ttf'
 elif [ -f "export/Monofoki-Regular.ttf" ]; then
     nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Regular.ttf'
 fi
 
-if [ -f "export/Monofoki-Italic-hinted.ttf" ]; then
+if [ -f "export/Monofoki-Italic-hinted.ttf" ] && [ "export/Monofoki-Italic-hinted.ttf" -nt "export/Monofoki-Italic.ttf" ]; then
     nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Italic-hinted.ttf'
 elif [ -f "export/Monofoki-Italic.ttf" ]; then
     nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Italic.ttf'
 fi
 
-if [ -f "export/Monofoki-Bold-Italic-hinted.ttf" ]; then
+if [ -f "export/Monofoki-Bold-Italic-hinted.ttf" ] && [ "export/Monofoki-Bold-Italic-hinted.ttf" -nt "export/Monofoki-Bold-Italic.ttf" ]; then
     nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold-Italic-hinted.ttf'
 elif [ -f "export/Monofoki-Bold-Italic.ttf" ]; then
     nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold-Italic.ttf'
 fi
 
-if [ -f "export/Monofoki-Bold-hinted.ttf" ]; then
+if [ -f "export/Monofoki-Bold-hinted.ttf" ] && [ "export/Monofoki-Bold-hinted.ttf" -nt "export/Monofoki-Bold.ttf" ]; then
     nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold-hinted.ttf'
 elif [ -f "export/Monofoki-Bold.ttf" ]; then
     nerd-font-patcher --complete --outputdir 'export/' 'export/Monofoki-Bold.ttf'

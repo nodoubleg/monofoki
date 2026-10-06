@@ -52,6 +52,51 @@ This version also tries to fix all the known issues and at times adds additional
 ## Fork specific problems to solve
 * FontForge does not have a tool to create rounded edges
 
+## Terminal graphics
+
+All four styles include the 256 Unicode Braille patterns (`U+2800–U+28FF`).
+These are often used for dotted terminal artwork. The glyphs use original,
+upright 178-unit square dots on a two-column, four-row grid. The grid fills
+Monofoki's existing 575-unit-wide, 1230-unit-high character cell, so the dot
+spacing continues across character and line boundaries. Font metrics and
+existing glyphs are unchanged. Bold generation leaves Braille unemboldened.
+
+To try the font, build with `./create_font.sh`, install the resulting fonts
+from `export/`, select Monofoki in your terminal, and run:
+
+```sh
+python3 script_helper/terminal_demo.py
+python3 script_helper/terminal_demo.py --all  # also show every Braille pattern
+```
+
+The demo includes artwork, a repeated dot grid, box and block joins, arrows,
+and ANSI bold/italic samples when output goes to a terminal. `--plain` omits
+ANSI styling; `--width 32` makes the artwork smaller. It uses your terminal's
+active font; it does not install or select a font. Extra terminal line spacing
+can still introduce gaps, and some terminals draw graphics themselves.
+For Nerd Font builds, run `./post_create_nerdfonts.sh` after building; it needs
+`nerd-font-patcher` on `PATH`. It prefers a hinted TTF only when that file is
+newer than the unhinted TTF. To refresh hinted files too, install `ttfautohint`
+and build with `./create_font.sh --hint`.
+
+Source maintenance and validation:
+
+```sh
+python3 script_helper/add_braille.py          # regenerate Braille records only
+python3 script_helper/add_braille.py --check  # verify source geometry
+fontforge -lang=py -script script_helper/check_terminal_glyphs.py
+fontforge -lang=py -script script_helper/check_terminal_glyphs.py export/Monofoki-Regular.ttf
+```
+
+The outline check verifies all 256 encodings against Unicode dot names,
+including the blank pattern, grid positions, contour direction, cell width,
+unchanged line metrics, and coverage of ASCII, boxes, blocks and restored
+arrows. It allows half a font unit of export rounding.
+
+The four sources now have identical encoded character coverage. Three arrows
+(`⇨` U+21E8, `⇩` U+21E9, `⇯` U+21EF) were restored in Italic and Bold-Italic
+using Monofoki's own glyphs/references at the corresponding weight.
+
 ## Other TODOs
 - [x] Fix directions of glyphs in FontForge
 - [x] .ttf fonts wont work on macOS (otf is working)
