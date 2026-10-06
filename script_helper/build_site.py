@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import html
 import json
+import re
 import shutil
 from pathlib import Path
 
@@ -20,6 +21,8 @@ def main():
     parser.add_argument('--revision', required=True, help='source commit SHA of the font build')
     parser.add_argument('--build-url', required=True, help='GitHub Actions run producing these fonts')
     args = parser.parse_args()
+    if not re.fullmatch(r'[0-9a-fA-F]{40}', args.revision):
+        parser.error('revision must be a full Git commit SHA')
     output = args.output.resolve()
     # Do not permit an output path that could overwrite project source.
     protected = (ROOT / name for name in ('website', 'src', 'script_helper', '.git', '.agents', '.codex'))
@@ -44,6 +47,10 @@ def main():
             hashes[name] = hashlib.sha256(source.read_bytes()).hexdigest()
     for name, directory in (('LICENSE-Monofoki', args.regular), ('LICENSE-nerd-font', args.nerd), ('license-audit-nerd-font.md', args.nerd)):
         shutil.copy2(directory / name, output / 'licenses' / name)
+    stylesheet = (output / 'style.css').read_text()
+    for name, digest in hashes.items():
+        stylesheet = stylesheet.replace(f'fonts/{name}', f'fonts/{name}?v={digest}')
+    (output / 'style.css').write_text(stylesheet)
     gallery = []
     for key, title, description, text in art_pieces():
         gallery.append(f'<figure id="art-{key}"><pre aria-hidden="true">{html.escape(text)}</pre>'
@@ -54,10 +61,20 @@ def main():
     for marker, value in replacements.items():
         assert marker in document, marker
         document = document.replace(marker, value)
-    (output / 'index.html').write_text(document)
     shutil.copy2(ROOT / 'script_helper' / 'terminal_demo.py', output / 'terminal_demo.py')
     text_demo = '\n\n'.join(f'{title}\n\n{text}' for _, title, _, text in art_pieces())
     (output / 'demo.txt').write_text(f'Monofoki terminal specimen\n\n{CHARACTER_SAMPLE}\n\n{text_demo}\n')
+    def version_asset(match):
+        attribute, url = match.groups()
+        if url.startswith(('https://', 'http://', '//', '#')):
+            return match[0]
+        path = output / url
+        # Media is rendered after staging; its revision still provides a new
+        # cache key whenever the tape or demo changes. Other files use bytes.
+        version = hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() and not url.startswith('media/') else args.revision
+        return f'{attribute}="{url}?v={version}"'
+    document = re.sub(r'\b(href|src|poster)="([^"]+)"', version_asset, document)
+    (output / 'index.html').write_text(document)
     (output / 'build.json').write_text(json.dumps({'revision': args.revision, 'build_url': args.build_url,
                                                 'font_sha256': hashes, 'vhs_version': '0.12.1'}, indent=2) + '\n')
     (output / '.nojekyll').touch()

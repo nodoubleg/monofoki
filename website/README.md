@@ -4,6 +4,8 @@ This adapts the paired specimens and explanations of the [original Mononoki site
 
 The `site` job in `.github/workflows/build-fonts.yml` downloads the regular and Nerd Font artifacts from its own workflow run. `script_helper/build_site.py` stages five WOFF2 files, licenses, HTML, and the demo under ignored `_site/`. Generated font and video files are never committed. Only the separate `deploy` job can publish to GitHub Pages, and it runs on `master` outside pull requests.
 
+Asset URLs include content hashes (or the recording's source revision) so a browser cannot keep an older font, video, or poster after a new site build.
+
 To preview locally, download the two artifacts from a successful font-build run, then run:
 
 ```sh
