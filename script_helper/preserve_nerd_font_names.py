@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Keep existing terminal-profile PostScript names without changing font outlines."""
 import sys
+import json
 import tempfile
 from pathlib import Path
 
@@ -24,15 +25,27 @@ def preserve(path):
     if style not in ('Regular', 'Italic', 'Bold', 'BoldItalic'):
         raise ValueError(f'Unexpected Nerd Font style: {path}')
     postscript = f'MonofokiNF-{style}'
+    expected_version = json.loads((Path(__file__).parent / 'build_dependencies.json').read_text())['nerd_fonts_version']
     with TTFont(path, lazy=True, recalcBBoxes=False, recalcTimestamp=False) as font:
-        if font['name'].getDebugName(6) == postscript:
+        versions = [record.toUnicode() for record in font['name'].names
+                    if record.nameID == 5 and f'Nerd Fonts {expected_version}' in record.toUnicode()]
+        if 'CFF ' in font:
+            cff_version = font['CFF '].cff.topDictIndex[0].version
+            if f'Nerd Fonts {expected_version}' in cff_version:
+                versions.insert(0, 'Version ' + cff_version)
+        if not versions:
+            raise ValueError(f'{path}: no metadata from the expected Nerd Fonts patcher')
+        version = versions[0]
+        values = {3: postscript + ';' + version.removeprefix('Version '), 5: version, 6: postscript}
+        if all(record.toUnicode() == values[record.nameID]
+               for record in font['name'].names if record.nameID in values):
             return
         untouched = {tag: font.reader[tag] for tag in font.reader.keys() if tag not in ('name', 'head', 'CFF ')}
         outlines = charstrings(font)
         head = font.reader['head']
         for record in font['name'].names:
-            if record.nameID == 6:
-                record.string = postscript.encode(record.getEncoding())
+            if record.nameID in values:
+                record.string = values[record.nameID].encode(record.getEncoding())
         if 'CFF ' in font:
             font['CFF '].cff.fontNames = [postscript]
         with tempfile.TemporaryDirectory(dir=path.parent) as directory:
@@ -40,6 +53,7 @@ def preserve(path):
             font.save(temporary)
             with TTFont(temporary, lazy=True, recalcBBoxes=False, recalcTimestamp=False) as checked:
                 assert checked['name'].getDebugName(6) == postscript
+                assert all(record.toUnicode() == version for record in checked['name'].names if record.nameID == 5)
                 assert all(checked.reader[tag] == data for tag, data in untouched.items()), 'non-name table changed'
                 assert charstrings(checked) == outlines, 'CFF glyph bytes changed'
                 updated_head = checked.reader['head']

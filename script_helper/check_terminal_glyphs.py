@@ -71,6 +71,7 @@ def check(path):
             assert len(font[cp].foreground) == 2, (path, hex(cp), 'paired arrow lost a component')
         if 'NerdFont' in str(path):
             assert 'Nerd Fonts 3.5.1' in font.version, (path, font.version, 'wrong patcher version')
+            assert all('Nerd Fonts 3.5.1' in value for _, name, value in font.sfnt_names if name == 'Version'), (path, 'stale version name')
             style = Path(path).stem.removeprefix('MonofokiNerdFont-')
             assert font.fontname == f'MonofokiNF-{style}', (path, font.fontname, 'terminal profile name changed')
         print(f"PASS {path}: 256 Braille patterns, {len(additions)} added symbols, metrics, ASCII, boxes, blocks, arrows")
