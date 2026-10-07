@@ -76,6 +76,14 @@ jobs:
           fontforge -lang=py -script script_helper/check_terminal_glyphs.py \
             export/MonofokiNerdFont-*.ttf export/MonofokiNerdFont-*.otf
 
+      - name: Export site character catalogues
+        run: |
+          python3 script_helper/export_character_catalog.py \
+            --regular export/Monofoki-Regular.otf \
+            --nerd export/MonofokiNerdFont-Regular.otf \
+            --glyphnames .font-build/nerd-font-patcher/glyphnames.json \
+            --output export/character-catalog.json
+
       - name: Upload Monofoki Nerd Font
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
@@ -86,13 +94,49 @@ jobs:
             export/NOTICES-symbols.md
             export/symbol-additions.json
             export/build-dependencies.json
+            export/character-catalog.json
             export/license-audit-nerd-font.md
+          if-no-files-found: error
+          retention-days: 30
+
+  coretext:
+    name: Render macOS fallback glyphs
+    needs: build
+    runs-on: macos-26
+    timeout-minutes: 10
+    steps:
+      - name: Check out the native renderer
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Download regular fonts
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: Monofoki-${{ github.sha }}
+          path: ${{ runner.temp }}/fonts/regular
+      - name: Download Nerd Font and catalogues
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: MonofokiNerdFont-${{ github.sha }}
+          path: ${{ runner.temp }}/fonts/nerd
+      - name: Render native CoreText fallback snapshots
+        run: |
+          swift script_helper/render_coretext_previews.swift \
+            "$RUNNER_TEMP/fonts/nerd/character-catalog.json" \
+            "$RUNNER_TEMP/fonts/regular/Monofoki-Regular.otf" \
+            "$RUNNER_TEMP/fonts/nerd/MonofokiNerdFont-Regular.otf" \
+            "$RUNNER_TEMP/coretext"
+      - name: Upload native fallback previews
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: CoreText-${{ github.sha }}
+          path: ${{ runner.temp }}/coretext
           if-no-files-found: error
           retention-days: 30
 
   site:
     name: Build specimen site and recording
-    needs: build
+    needs: [build, coretext]
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -113,6 +157,12 @@ jobs:
           name: MonofokiNerdFont-${{ github.sha }}
           path: ${{ runner.temp }}/fonts/nerd
 
+      - name: Download native macOS fallback previews
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: CoreText-${{ github.sha }}
+          path: ${{ runner.temp }}/coretext
+
       - name: Stage the site with CI webfonts
         env:
           FONT_REVISION: ${{ github.sha }}
@@ -121,6 +171,7 @@ jobs:
           python3 script_helper/build_site.py \
             --regular "$RUNNER_TEMP/fonts/regular" \
             --nerd "$RUNNER_TEMP/fonts/nerd" \
+            --coretext "$RUNNER_TEMP/coretext" \
             --revision "$FONT_REVISION" --build-url "$FONT_BUILD_URL"
 
       - name: Install VHS and recording dependencies

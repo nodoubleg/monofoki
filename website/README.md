@@ -12,6 +12,7 @@ To preview locally, download the two artifacts from a successful font-build run,
 python3 script_helper/build_site.py \
   --regular /path/to/regular-artifact \
   --nerd /path/to/nerd-artifact \
+  --coretext /path/to/coretext-artifact \
   --revision COMMIT_SHA \
   --build-url https://github.com/nodoubleg/monofoki/actions/runs/RUN_ID
 python3 -m http.server --directory _site 8000
@@ -30,3 +31,33 @@ vhs website/demo.tape
 ```
 
 The tape produces `_site/media/monofoki.mp4`. CI extracts a PNG poster from its final held artwork frame with FFmpeg. It uses deterministic specimen scenes rather than live app sessions. The video has playback controls, a poster, and a text alternative; it does not autoplay. The Nerd Fonts and Unicode versions, font-build revision and per-file SHA-256 values are recorded in `_site/build.json`.
+
+The Symbols page follows the original Mononoki character showcase, Nerd Font
+icons, the fork's 415 additions, and characters supplied by native macOS font
+fallback. The original list is pinned in `mononoki_repertoire.json`; Unicode
+18 script properties omit other writing-system alphabets while keeping Latin,
+common punctuation, symbols and private-use icons. Character maps and Nerd
+Font names come from the actual build, not hand-maintained icon ranges.
+
+The `coretext` job uses a macOS 26 runner and the same run's OTF files. It
+registers those fonts only in its process and renders bare Unicode scalars
+into transparent light/dark PNG atlases. The generated records include the
+requested font, actual fallback font names, missing-glyph status, host version,
+architecture, rendering settings and input font hashes. No Apple font files
+or outlines are distributed. The page labels this as a CoreText snapshot,
+not a capture of Terminal.app or iTerm2. Generated catalogues, images and
+records remain in ignored staging directories and Actions/Pages artifacts.
+
+To generate a local native snapshot, first export `character-catalog.json`
+using `script_helper/export_character_catalog.py`, then run:
+
+```sh
+swift script_helper/render_coretext_previews.swift \
+  /path/to/character-catalog.json \
+  /path/to/Monofoki-Regular.otf \
+  /path/to/MonofokiNerdFont-Regular.otf \
+  /path/to/generated-coretext
+```
+
+All original/addition glyphs and expandable Nerd icon groups remain visible
+without JavaScript. Search, filters and copying progressively enhance the page.

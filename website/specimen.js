@@ -29,6 +29,7 @@ systemTheme.addEventListener("change", syncTheme);
 syncTheme();
 
 const sample = document.querySelector("#type-sample");
+if (sample) {
 const original = sample.value;
 const style = document.querySelector("#style");
 const size = document.querySelector("#size");
@@ -47,3 +48,4 @@ document.querySelector("#reset").addEventListener("click", () => {
   updateSample();
 });
 updateSample();
+}
