@@ -44,8 +44,9 @@ registers those fonts only in its process and renders bare Unicode scalars
 into transparent light/dark PNG atlases. The generated records include the
 requested font, actual fallback font names, missing-glyph status, host version,
 architecture, rendering settings and input font hashes. No Apple font files
-or outlines are distributed. The page labels this as a CoreText snapshot,
-not a capture of Terminal.app or iTerm2. Generated catalogues, images and
+or outlines are distributed. The page presents these as macOS fallback examples
+and explains that results depend on the visitor's fonts and applications.
+Host details and validation history stay out of the visitor-facing copy. Generated catalogues, images and
 records remain in ignored staging directories and Actions/Pages artifacts.
 
 To generate a local native snapshot, first export `character-catalog.json`
@@ -61,3 +62,8 @@ swift script_helper/render_coretext_previews.swift \
 
 All original/addition glyphs and expandable Nerd icon groups remain visible
 without JavaScript. Search, filters and copying progressively enhance the page.
+All three searches match partial names and code points as the visitor types.
+`U+` and `0x` queries match code-point prefixes; for example, `U+1` narrows the
+added symbols to the supplementary-plane entries. Icon names accept the `nf-`
+prefix, and spaces, hyphens and underscores are interchangeable. Each search
+filters only its own catalogue.

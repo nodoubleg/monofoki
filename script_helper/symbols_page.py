@@ -22,7 +22,7 @@ def render_symbols(nerd_directory, coretext_directory):
     for item in catalog['baseline']:
         cp = item['codepoint']
         glyph = ('a' if item['category'].startswith('M') else '') + chr(int(cp, 16))
-        status = 'in Monofoki' if item['regular'] else 'system fallback; see the native snapshot below'
+        status = 'in Monofoki' if item['regular'] else 'uses another font; see the fallback examples'
         baseline.append(f'<span class="repertoire-glyph" title="U+{cp} {html.escape(item["name"])} — {status}">{html.escape(glyph)}</span>')
     icon_groups = {}
     for item in catalog['icons']:
@@ -33,7 +33,7 @@ def render_symbols(nerd_directory, coretext_directory):
         for item in entries:
             cp = item['codepoint']
             label = html.escape(' / '.join(item['aliases']), quote=True)
-            tiles.append(f'<span class="nerd-icon" data-icon-search="{label.lower()} {cp.lower()}" '
+            tiles.append(f'<span class="nerd-icon" data-codepoint="{cp}" data-icon-search="{label.lower()}" '
                          f'title="U+{cp} {label}" aria-label="U+{cp} {label}">&#x{cp};</span>')
         labels = {'unicode': 'Standard Unicode symbols', 'pom': 'Pomicons', 'pl': 'Powerline', 'ple': 'Powerline Extra',
                   'fae': 'Font Awesome Extension', 'weather': 'Weather Icons', 'custom': 'Custom Icons', 'seti': 'Seti UI',
@@ -48,9 +48,9 @@ def render_symbols(nerd_directory, coretext_directory):
     for record in snapshot['records']:
         cp, variant = record['codepoint'], record['variant']
         names = ', '.join(record['fonts'])
-        result = 'Missing in this snapshot' if record['missing'] else 'CoreText: ' + names
+        result = 'No glyph available in this example' if record['missing'] else 'Drawn by ' + names
         x, y = record['x'] // 2, record['y'] // 2
-        fallback.append(f'<article class="fallback-card" data-variant="{variant}" data-fallback-search="{html.escape(record["name"].lower())} {cp.lower()} {html.escape(names.lower())}">'
+        fallback.append(f'<article class="fallback-card" data-variant="{variant}" data-codepoint="{cp}" data-fallback-search="{html.escape(record["name"].lower())} {html.escape(names.lower())}">'
                         f'<span class="native-glyph native-{variant}" role="img" aria-label="CoreText rendering of U+{cp} {html.escape(record["name"])}" '
                         f'style="background-position: -{x}px -{y}px"></span><code>U+{cp}</code>'
                         f'<h4>{html.escape(record["name"])}</h4><small>{"Monofoki" if variant == "regular" else "Monofoki Nerd Font"} selected<br>{html.escape(result)}</small></article>')
@@ -96,7 +96,6 @@ def render_symbols(nerd_directory, coretext_directory):
         '@@NERD_REPERTOIRE@@': '\n'.join(icons),
         '@@NERD_COUNT@@': str(len(catalog['icons'])),
         '@@FALLBACK_GALLERY@@': ''.join(fallback),
-        '@@CORETEXT_HOST@@': html.escape(snapshot['macos'] + ' · ' + snapshot['architecture']),
         '@@SYMBOL_GALLERY@@': '\n'.join(cards),
         '@@SYMBOL_HIGHLIGHTS@@': '\n'.join(previews),
         '@@BLOCK_OPTIONS@@': ''.join(options),

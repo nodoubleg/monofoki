@@ -1,6 +1,17 @@
 "use strict";
 
 (() => {
+  function searchMatcher(value) {
+    const query = value.trim().toLowerCase().replace(/^nf-/, "");
+    const code = /^(?:u\+|0x)([0-9a-f]*)$/.exec(query);
+    if (code) {
+      const prefix = code[1].replace(/^0+(?=.)/, "");
+      return (codepoint) => codepoint.toLowerCase().replace(/^0+(?=.)/, "").startsWith(prefix);
+    }
+    const words = query.replace(/[-_]/g, " ");
+    return (codepoint, name) => `${name} ${codepoint}`.toLowerCase().replace(/[-_]/g, " ").includes(words);
+  }
+
   const controls = document.querySelector(".symbol-controls");
   if (!controls) return;
   const search = document.querySelector("#symbol-search");
@@ -14,15 +25,11 @@
   controls.hidden = false;
 
   function filter() {
-    const query = search.value.trim().toLowerCase();
-    const code = /^(?:u\+|0x)?0*([0-9a-f]{4,6})$/i.exec(query);
+    const matches = searchMatcher(search.value);
     let shown = 0;
     cards.forEach((card) => {
-      const matchesText = code
-        ? parseInt(card.dataset.codepoint, 16) === parseInt(code[1], 16)
-        : `${card.dataset.name} ${card.dataset.codepoint}`.toLowerCase().includes(query);
       card.hidden = !(
-        matchesText &&
+        matches(card.dataset.codepoint, card.dataset.name) &&
         (block.value === "all" || card.dataset.block === block.value) &&
         (donor.value === "all" || card.dataset.donor === donor.value)
       );
@@ -86,22 +93,27 @@
   if (iconSearch) {
     document.querySelector(".icon-search-label").hidden = false;
     const icons = Array.from(document.querySelectorAll(".nerd-icon"));
-    iconSearch.addEventListener("input", () => {
-      let query = iconSearch.value.trim().toLowerCase().replace(/^nf-/, "");
-      query = query.replace(/^(?:u\+|0x)0*/, "");
+    function filterIcons() {
+      const query = iconSearch.value.trim();
+      const matches = searchMatcher(query);
       let shown = 0;
       icons.forEach((icon) => {
-        icon.hidden = !icon.dataset.iconSearch.includes(query);
+        icon.hidden = !matches(icon.dataset.codepoint, icon.dataset.iconSearch);
         if (!icon.hidden) shown += 1;
       });
       document.querySelectorAll(".icon-group").forEach((group) => {
         const visible = group.querySelectorAll(".nerd-icon:not([hidden])").length;
+        const total = group.querySelectorAll(".nerd-icon").length;
         group.hidden = visible === 0;
+        group.querySelector("summary span").textContent = visible === total ? total : `${visible} / ${total}`;
         if (query) group.open = visible !== 0;
         else group.open = false;
       });
-      document.querySelector("#icon-count").textContent = `Showing ${shown} of ${icons.length} mapped Nerd glyphs`;
-    });
+      document.querySelector("#icon-count").textContent = `Showing ${shown} of ${icons.length} Nerd Font glyphs`;
+      document.querySelector("#icon-empty").hidden = shown !== 0;
+    }
+    iconSearch.addEventListener("input", filterIcons);
+    filterIcons();
   }
   const fallbackVariant = document.querySelector("#fallback-variant");
   if (fallbackVariant) {
@@ -109,13 +121,14 @@
     const fallbackSearch = document.querySelector("#fallback-search");
     const previews = Array.from(document.querySelectorAll(".fallback-card"));
     function filterFallback() {
-      const query = fallbackSearch.value.trim().toLowerCase().replace(/^(?:u\+|0x)0*/, "");
+      const matches = searchMatcher(fallbackSearch.value);
       let shown = 0;
       previews.forEach((preview) => {
-        preview.hidden = preview.dataset.variant !== fallbackVariant.value || !preview.dataset.fallbackSearch.includes(query);
+        preview.hidden = preview.dataset.variant !== fallbackVariant.value || !matches(preview.dataset.codepoint, preview.dataset.fallbackSearch);
         if (!preview.hidden) shown += 1;
       });
       document.querySelector("#fallback-count").textContent = `Showing ${shown} characters absent from ${fallbackVariant.value === "regular" ? "Monofoki" : "Monofoki Nerd Font"}`;
+      document.querySelector("#fallback-empty").hidden = shown !== 0;
     }
     fallbackVariant.addEventListener("change", filterFallback);
     fallbackSearch.addEventListener("input", filterFallback);
