@@ -65,11 +65,19 @@
   function showLinkedGlyph() {
     const match = /^#u-([0-9a-f]+)$/i.exec(location.hash);
     if (!match || !document.getElementById(`u-${match[1].toLowerCase()}`)) return;
+    document.querySelector("#catalogue").open = true;
     search.value = `U+${match[1].toUpperCase()}`;
     block.value = donor.value = "all";
     filter();
     document.getElementById(`u-${match[1].toLowerCase()}`).scrollIntoView({ block: "center" });
   }
+  function openLinkedPanel() {
+    const id = location.hash.slice(1);
+    const target = document.getElementById(id);
+    if (target && target.matches("details.catalog-panel")) target.open = true;
+  }
+  window.addEventListener("hashchange", openLinkedPanel);
+  openLinkedPanel();
   window.addEventListener("hashchange", showLinkedGlyph);
   filter();
   showLinkedGlyph();

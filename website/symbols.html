@@ -27,48 +27,51 @@
       <section class="symbols-hero" aria-labelledby="symbols-title">
         <p class="eyebrow">Monofoki / the war on missing glyphs</p>
         <h1 id="symbols-title">Leave no <span class="missing-box" role="img" aria-label="missing glyph">?</span><br>behind.</h1>
-        <p class="symbols-lead">Ribbon arrows. Chess notation. Old terminal graphics.<br>We found the gaps, then gave those characters a place in the font.</p>
+        <p class="symbols-lead">415 more symbols for the terminal.<br>Explore the font’s own characters and the ones macOS supplies through fallback.</p>
         <div class="symbol-metrics">
           <div><strong>415</strong><span>symbols added</span></div>
-          <div><strong>2,113</strong><span>characters in the test</span></div>
-          <div><strong>0</strong><span>missing in that CoreText test</span></div>
+          <div><strong>2,113</strong><span>characters checked</span></div>
+          <div><strong>0</strong><span>missing in the tested ranges</span></div>
         </div>
-        <p class="coverage-caption">14 selected ranges · all four styles · macOS 27.0.1 · native, text and emoji presentation.<br>This is a font-engine check, not a promise of all-Unicode coverage or a completed live Terminal.app/iTerm2 test.</p>
+        <p class="coverage-caption">Coverage: 14 symbol ranges, all four styles, checked with CoreText on macOS 27.0.1 in native, text and emoji presentation.</p>
         <div class="page-jumps"><a href="#original">Original set ↓</a><a href="#nerd-fonts">Nerd Fonts ↓</a><a href="#catalogue">Our additions ↓</a><a href="#fallback">CoreText fallback ↓</a><a href="#resources">Useful links ↓</a></div>
       </section>
 
-      <section id="original" class="symbols-section" aria-labelledby="original-title">
-        <p class="section-number">01 / WHERE WE STARTED</p>
-        <h2 id="original-title">The original Mononoki character set.</h2>
-        <p class="section-intro">The same ordered list from <a href="https://madmalik.github.io/mononoki/">Mononoki's original character showcase</a>, with other writing-system alphabets omitted. That leaves @@ORIGINAL_COUNT@@ Latin characters, numbers, punctuation, mathematical symbols, graphics and powerline shapes. Combining marks are shown on “a”. These previews use Monofoki's shapes.</p>
+      <details id="original" class="symbols-section catalog-panel" aria-labelledby="original-title">
+        <summary><p class="section-number">01 / WHERE WE STARTED</p><h2 id="original-title">The original Mononoki character set.</h2><span class="panel-hint">@@ORIGINAL_COUNT@@ characters</span></summary>
+        <div class="panel-body">
+<p class="section-intro">@@ORIGINAL_COUNT@@ characters from <a href="https://madmalik.github.io/mononoki/">Mononoki’s original specimen</a>, in their original order and rendered in Monofoki. This view includes Latin letters and accents, numbers, punctuation, mathematical symbols, graphics and powerline shapes. Other writing-system alphabets are omitted; combining marks are shown on “a”.</p>
         <div class="original-wall" aria-label="Original Mononoki repertoire">@@ORIGINAL_REPERTOIRE@@</div>
-        <p class="coverage-caption">Hover a character for its code point and name. Some members of the original list aren't embedded in this Monofoki build; the native fallback section shows how macOS handles those.</p>
-      </section>
+        <p class="coverage-caption">Hover a character for its code point and name. Characters absent from Monofoki also appear in the native fallback gallery.</p>
+        </div>
+      </details>
 
-      <section id="nerd-fonts" class="symbols-section" aria-labelledby="nerd-title">
-        <p class="section-number">02 / THEN CAME THE ICONS</p>
-        <h2 id="nerd-title">Nerd Fonts 3.5.1.</h2>
-        <p class="section-intro">@@NERD_COUNT@@ mapped glyphs in this build, grouped by icon library: private-use icons and the standard Unicode symbols added by patching. Open a group to see its characters. Names and code points come from the pinned Nerd Fonts metadata and this build's actual character map.</p>
+      <details id="nerd-fonts" class="symbols-section catalog-panel" aria-labelledby="nerd-title">
+        <summary><p class="section-number">02 / THEN CAME THE ICONS</p><h2 id="nerd-title">Nerd Fonts 3.5.1.</h2><span class="panel-hint">@@NERD_COUNT@@ glyphs</span></summary>
+        <div class="panel-body">
+<p class="section-intro">@@NERD_COUNT@@ glyphs available in Monofoki Nerd Font 3.5.1, grouped by library. Most are private-use icons; a few are standard Unicode symbols. Open a group and hover an icon to see its names and code point.</p>
         <label class="icon-search-label" hidden>Find an icon<input id="icon-search" type="search" placeholder="terminal, folder, nf-md…, F120" spellcheck="false"></label>
         <p id="icon-count" class="coverage-caption">All mapped icons are available in the groups below. Hover an icon for its names and code point.</p>
         @@NERD_REPERTOIRE@@
-      </section>
+        </div>
+      </details>
 
-      <section id="added" class="symbols-section" aria-labelledby="added-title">
-        <p class="section-number">03 / GIVE THE BOX A DAY OFF</p>
-        <h2 id="added-title">A few of the additions.</h2>
-        <p class="section-intro">These glyphs are now in every regular and Nerd Font style. The previews use the Monofoki webfont from this site's GitHub Actions build.</p>
+      <details id="added" class="symbols-section catalog-panel" aria-labelledby="added-title">
+        <summary><p class="section-number">03 / GIVE THE BOX A DAY OFF</p><h2 id="added-title">A few of the additions.</h2><span class="panel-hint">Eight examples and their sources</span></summary>
+        <div class="panel-body">
+<p class="section-intro">Every regular and Nerd Font style includes these additions. The examples below use Monofoki’s own glyphs.</p>
         <div class="symbol-highlights">@@SYMBOL_HIGHLIGHTS@@</div>
         <div class="donor-summary">
           <p><strong>333</strong> from Iosevka Nerd Font 3.5.1</p><p><strong>79</strong> from Noto Sans Symbols 2</p><p><strong>3</strong> from Kreative Square</p>
         </div>
-        <p class="section-intro">We chose actual Unicode glyphs from the Nerd Fonts build first, then filled the remaining gaps with licensed outlines. U+2B96, the equals sign with infinity above, comes from reflecting Noto's “infinity below” form. Braille's 256 patterns also got the Nerd Fonts 3.5.1 grid geometry; they are earlier work and are not part of the 415 count.</p>
-      </section>
+        <p class="section-intro">The outlines come from Iosevka Nerd Font, Noto Sans Symbols 2 and Kreative Square. U+2B96, a chess notation symbol, uses Noto’s “infinity below” glyph reflected vertically. Monofoki also has all 256 Braille patterns, with the Nerd Fonts 3.5.1 grid geometry; those are separate from the 415 additions.</p>
+        </div>
+      </details>
 
-      <section id="catalogue" class="symbols-section" aria-labelledby="catalogue-title">
-        <p class="section-number">04 / THE WHOLE ROLL CALL</p>
-        <h2 id="catalogue-title">Every added symbol.</h2>
-        <p class="section-intro">Each entry has its Unicode name, code point, source font and official block chart. Click a code point for a direct link to that glyph.</p>
+      <details id="catalogue" class="symbols-section catalog-panel" aria-labelledby="catalogue-title">
+        <summary><p class="section-number">04 / THE WHOLE ROLL CALL</p><h2 id="catalogue-title">Every added symbol.</h2><span class="panel-hint">415 symbols</span></summary>
+        <div class="panel-body">
+<p class="section-intro">Each entry has its Unicode name, code point, source font and official block chart. Click a code point for a direct link to that glyph.</p>
         <div class="symbol-controls" hidden>
           <label class="symbol-search">Find a symbol<input id="symbol-search" type="search" placeholder="ribbon arrow, bell, U+2BB7…" autocomplete="off" spellcheck="false"></label>
           <label>Block<select id="symbol-block"><option value="all">All four blocks</option>@@BLOCK_OPTIONS@@</select></label>
@@ -79,62 +82,66 @@
         <noscript><p>All 415 symbols are shown below. Search and copying are available with JavaScript.</p></noscript>
         <p id="symbol-empty" hidden>No matches. Try a Unicode name, a code point, or another source font.</p>
         @@SYMBOL_GALLERY@@
-      </section>
+        </div>
+      </details>
 
 
-      <section id="fallback" class="symbols-section" aria-labelledby="fallback-title">
-        <p class="section-number">05 / YOUR FONT HAS BACKUP</p>
-        <h2 id="fallback-title">Yes, macOS handles some of the rest.</h2>
-        <p class="section-intro">A visible character doesn't necessarily belong to Monofoki. CoreText can select another font from its font cascade when a glyph is needed. In our macOS checks, fallback included Menlo, Apple Symbols, STIX Two Math and Apple Color Emoji. Those are observations, not a fixed list every app or macOS version must use.</p>
+      <details id="fallback" class="symbols-section catalog-panel" aria-labelledby="fallback-title">
+        <summary><p class="section-number">05 / YOUR FONT HAS BACKUP</p><h2 id="fallback-title">When macOS supplies the glyph.</h2><span class="panel-hint">Native glyph previews and font names</span></summary>
+        <div class="panel-body">
+<p class="section-intro">Selecting Monofoki doesn’t mean every character on screen comes from Monofoki. CoreText can draw a missing character with another font in its cascade, including system faces such as Menlo, Apple Symbols, STIX Two Math and Apple Color Emoji. The available fonts and their order depend on the system.</p>
         <div class="fallback-flow" aria-label="How characters get their glyphs">
           <article><span class="flow-step">01</span><h3>Monofoki has it</h3><p>The font draws the character. All 415 additions shown here are embedded glyphs.</p><div class="flow-glyph" aria-hidden="true">&#x2BB7; &#x1FBFA;</div></article>
           <article><span class="flow-step">02</span><h3>Another font has it</h3><p>CoreText can supply a matching fallback face. Emoji can come from Apple Color Emoji.</p><div class="flow-glyph emoji-font" aria-hidden="true">☀️ ☕️</div></article>
           <article><span class="flow-step">03</span><h3>No suitable glyph</h3><p>The result can be a box or LastResort glyph. Fallback can choose a font; it cannot invent an outline.</p><div class="flow-glyph"><span class="missing-box" role="img" aria-label="missing glyph">?</span></div></article>
         </div>
-        <p class="section-intro">That distinction mattered here. The original Terminal.app PDF showed 64 boxed symbols, while other installed fonts quietly supplied many more characters. A check using Monofoki with macOS system fallback exposed 415 gaps. We filled those rather than depending on someone else's terminal font being installed.</p>
-        <h3 class="fallback-heading">Not in the font. Still on the screen.</h3>
-        <p class="section-intro">These are actual CoreText raster previews from a macOS runner using this site's font files, with Monofoki selected. Each character is sent as a bare Unicode scalar, just as ordinary text is. The label records the font CoreText used; an entry can be absent from Monofoki and still print through fallback.</p>
-        <p class="coverage-caption">Snapshot host: @@CORETEXT_HOST@@. This is the native font engine, not a capture of Terminal.app or iTerm2. Their exact choices can vary with macOS version, settings, context and installed fonts. We include absent characters from the filtered original list and our 14 terminal-symbol ranges.</p>
+        <p class="section-intro">System fallback already handles many mathematical symbols and emoji. The 415 additions fill gaps that remained when Monofoki was used with macOS system fonts, so those characters can render without another terminal font being installed.</p>
+        <h3 class="fallback-heading">Characters supplied by fallback.</h3>
+        <p class="section-intro">These images were rendered by CoreText with Monofoki selected. Each label identifies the font that drew the character. Switch between regular and Nerd Font to see which characters each variant leaves to fallback. Characters use their default presentation, without added emoji or text selectors.</p>
+        <p class="coverage-caption">Recorded on @@CORETEXT_HOST@@. Terminal.app and iTerm2 use native font rendering, but their font choices can vary with macOS version, settings and installed fonts. This gallery covers absent characters from the original specimen and the 14 symbol ranges listed below.</p>
         <div class="fallback-controls" hidden><label>Configured font<select id="fallback-variant"><option value="regular">Monofoki</option><option value="nerd">Monofoki Nerd Font</option></select></label><label>Find a fallback character<input id="fallback-search" type="search" placeholder="sun, infinity, U+2600…" spellcheck="false"></label></div>
-        <p id="fallback-count" class="coverage-caption" aria-live="polite">Both font variants are listed below without JavaScript.</p>
+        <p id="fallback-count" class="coverage-caption" aria-live="polite">Characters absent from regular and Nerd Font are listed below.</p>
         <div class="fallback-grid">@@FALLBACK_GALLERY@@</div>
-        <p class="coverage-caption"><a href="coretext/coretext.json">Native rendering records</a> · <a href="character-catalog.json">Character maps and source hashes</a>. The previews are rendered text images; no Apple font files or outlines are bundled.</p>
-        <details class="tested-ranges"><summary>What exactly did we test?</summary><p>2,113 assigned printable characters, as defined by Unicode 18.0.0, in the ranges below. Every regular and Nerd Font style passed the CoreText check in OTF and TTF. Emoji still uses system fonts; this font does not contain every character in Unicode.</p><ul>@@TESTED_RANGES@@</ul><p><a href="https://github.com/nodoubleg/monofoki/blob/master/script_helper/check_macos_symbols.swift">Read the macOS check</a> · <a href="https://github.com/nodoubleg/monofoki/releases/tag/20261006b">Release 20261006b and its validation notes</a></p></details>
-      </section>
+        <p class="coverage-caption"><a href="coretext/coretext.json">Rendering details and font names</a> · <a href="character-catalog.json">Character maps</a></p>
+        <details class="tested-ranges"><summary>Coverage and methodology</summary><p>2,113 assigned printable characters, as defined by Unicode 18.0.0, in the ranges below. Every regular and Nerd Font style passed the CoreText check in OTF and TTF. Emoji still uses system fonts; this font does not contain every character in Unicode.</p><ul>@@TESTED_RANGES@@</ul><p><a href="https://github.com/nodoubleg/monofoki/blob/master/script_helper/check_macos_symbols.swift">Read the macOS check</a> · <a href="https://github.com/nodoubleg/monofoki/releases/tag/20261006b">Release 20261006b and its validation notes</a></p></details>
+        </div>
+      </details>
 
-      <section id="emoji" class="symbols-section" aria-labelledby="emoji-title">
-        <p class="section-number">06 / SOMETIMES A SUN IS A SUN</p>
-        <h2 id="emoji-title">Text or emoji? The string has a say.</h2>
-        <p class="section-intro">Some characters have standardized text and emoji forms. U+FE0E asks for text presentation; U+FE0F asks for emoji presentation. A bare character can use its default presentation or an app's choice. Adding FE0F to an arbitrary missing symbol does not turn it into an emoji.</p>
+      <details id="emoji" class="symbols-section catalog-panel" aria-labelledby="emoji-title">
+        <summary><p class="section-number">06 / SOMETIMES A SUN IS A SUN</p><h2 id="emoji-title">Why some symbols become emoji.</h2><span class="panel-hint">Text and emoji presentation</span></summary>
+        <div class="panel-body">
+<p class="section-intro">Some characters have standardized text and emoji forms. U+FE0E asks for text presentation; U+FE0F asks for emoji presentation. A bare character can use its default presentation or an app's choice. Adding FE0F to an arbitrary missing symbol does not turn it into an emoji.</p>
         <div class="emoji-comparison">
           <div><span class="emoji-label">TEXT / FE0E</span><span class="emoji-preview">☀︎ ☕︎ ♥︎</span><code>U+2600 U+FE0E</code></div>
           <div><span class="emoji-label">EMOJI / FE0F</span><span class="emoji-preview emoji-font">☀️ ☕️ ♥️</span><code>U+2600 U+FE0F</code></div>
         </div>
-        <p class="coverage-caption">This preview uses your browser's font fallback. It is not a Terminal.app or iTerm2 rendering test.</p>
-        <p class="section-intro">Our Perl specimen requests emoji for the 159 non-ASCII characters in these ranges that have standardized emoji sequences. ASCII stays text. It also offers text and native presentation, so you can compare them. Monofoki itself cannot force every application's output into one presentation.</p>
+        <p class="coverage-caption">The text and emoji examples above use your browser’s font fallback.</p>
+        <p class="section-intro">Unicode 18 defines standardized text and emoji sequences for 159 non-ASCII characters in the selected symbol ranges. On macOS, color emoji can come from Apple Color Emoji. The application’s output determines which presentation is requested.</p>
         <div class="decoding-note"><h3>A different question mark: <span aria-label="replacement character">�</span></h3><p>U+FFFD is the replacement character. It usually means text could not be decoded correctly, rather than a font lacking the intended glyph. A new font can fill a glyph gap; it cannot recover characters already lost during decoding.</p></div>
-      </section>
+        </div>
+      </details>
 
-      <section id="resources" class="symbols-section" aria-labelledby="resources-title">
-        <p class="section-number">07 / MAPS FOR THE RABBIT HOLE</p>
-        <h2 id="resources-title">Useful places to look next.</h2>
-        <div class="resource-grid">
+      <details id="resources" class="symbols-section catalog-panel" aria-labelledby="resources-title">
+        <summary><p class="section-number">07 / MAPS FOR THE RABBIT HOLE</p><h2 id="resources-title">Useful places to look next.</h2><span class="panel-hint">Unicode, Nerd Fonts and font resources</span></summary>
+        <div class="panel-body">
+<div class="resource-grid">
           <a href="https://www.unicode.org/versions/Unicode18.0.0/"><strong>Unicode 18.0.0</strong><span>The standard, release notes and character references.</span></a>
-          <a href="https://www.unicode.org/Public/18.0.0/ucd/"><strong>Unicode 18 character data</strong><span>Names, assignments and properties. The <span class="resource-inline">final UCD</span> is the data our specimen uses.</span></a>
+          <a href="https://www.unicode.org/Public/18.0.0/ucd/"><strong>Unicode 18 character data</strong><span>Names, assignments and properties in the final Unicode 18 character database.</span></a>
           <a href="https://www.unicode.org/charts/"><strong>Unicode code charts</strong><span>Representative glyphs, names and notes, organized by block.</span></a>
           <a href="https://www.unicode.org/reports/tr51/#Presentation_Style"><strong>Emoji presentation</strong><span>Unicode's explanation of text, emoji and variation selectors.</span></a>
           <a href="https://www.unicode.org/Public/18.0.0/ucd/emoji/emoji-variation-sequences.txt"><strong>Standard emoji sequences</strong><span>Which base characters have standardized FE0E / FE0F forms.</span></a>
-          <a href="https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.5.1"><strong>Nerd Fonts 3.5.1</strong><span>The release pinned by our local and CI builds.</span></a>
+          <a href="https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.5.1"><strong>Nerd Fonts 3.5.1</strong><span>Release notes and downloads for the icon and font-patching version used here.</span></a>
           <a href="https://www.nerdfonts.com/cheat-sheet"><strong>Nerd Fonts cheat sheet</strong><span>Find icon names and private-use code points. These are separate from standard Unicode symbol names.</span></a>
           <a href="https://developer.apple.com/documentation/coretext/ctfontcreateforstring(_:_:_:)"><strong>Apple font fallback</strong><span>How CoreText chooses a substitute from a font cascade.</span></a>
-          <a href="https://github.com/ryanoasis/nerd-fonts/tree/v3.5.1/patched-fonts/Iosevka"><strong>Iosevka Nerd Font</strong><span>The first source we check for matching Unicode glyphs.</span></a>
+          <a href="https://github.com/ryanoasis/nerd-fonts/tree/v3.5.1/patched-fonts/Iosevka"><strong>Iosevka Nerd Font</strong><span>The source of 333 added Unicode glyphs.</span></a>
           <a href="https://github.com/notofonts/symbols"><strong>Noto Symbols</strong><span>Open source outlines for a wide range of symbols.</span></a>
           <a href="https://www.kreativekorp.com/software/fonts/ksquare/"><strong>Kreative Square</strong><span>Legacy computing and terminal graphics, including our final three additions.</span></a>
           <a href="https://github.com/nodoubleg/monofoki/blob/master/script_helper/symbol_additions.json"><strong>The glyph provenance</strong><span>Every addition, its original code point and the transformation we applied.</span></a>
           <a href="https://github.com/nodoubleg/monofoki/blob/master/script_helper/unicode_specimen.pl"><strong>Check your own terminal</strong><span>The Perl specimen with current Unicode data and presentation choices.</span></a>
           <a href="licenses/NOTICES-symbols.md"><strong>Sources and licenses</strong><span>Copyright notices, pinned donor versions and the outline derivations.</span></a>
         </div>
-      </section>
+        </div>
+      </details>
     </main>
     <footer>
       <p><a href="index.html">Back to the Monofoki specimen</a> · <a href="https://github.com/nodoubleg/monofoki/releases/latest">Get the fonts</a></p>

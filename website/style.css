@@ -861,3 +861,12 @@ nav a[aria-current="page"] { color: var(--pink); }
   .fallback-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .fallback-card { padding: 14px; }
 }
+.catalog-panel > summary { cursor: pointer; list-style: none; position: relative; padding-right: 48px; }
+.catalog-panel > summary::-webkit-details-marker { display: none; }
+.catalog-panel > summary::after { content: "+"; position: absolute; right: 4px; top: 20px; font-size: 32px; color: var(--pink); }
+.catalog-panel[open] > summary::after { content: "−"; }
+.catalog-panel > summary h2 { margin-bottom: 12px; }
+.catalog-panel > summary .section-number { margin-bottom: 12px; }
+.panel-hint { color: var(--muted); font-size: 13px; }
+.panel-body { margin-top: 30px; }
+.catalog-panel > summary:focus-visible { outline: 3px solid var(--pink); outline-offset: 8px; }
